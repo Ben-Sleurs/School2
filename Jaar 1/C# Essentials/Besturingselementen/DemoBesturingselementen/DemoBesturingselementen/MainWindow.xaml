@@ -1,0 +1,85 @@
+﻿<Window x:Class="DemoBesturingselementen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DemoBesturingselementen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        
+        <!--<CheckBox 
+            Name="CB_Isman"
+            Content="Is Man" 
+            HorizontalAlignment="Left" 
+            Margin="50,50,0,0" 
+            VerticalAlignment="Top" Checked="CB_Isman_Checked"/>
+        <Button 
+            Content="Klik mij" 
+            HorizontalAlignment="Left" 
+            Margin="50,100,0,0" 
+            VerticalAlignment="Top" Height="26" Width="55" Click="Button_Click"/>
+        <Label 
+            Name="Label_Isman"
+            Content="Test tekst" 
+            HorizontalAlignment="Left" 
+            Margin="50,150,0,0" 
+            VerticalAlignment="Top"/>-->
+
+        <!--<DockPanel>
+            <TextBlock 
+                DockPanel.Dock="top"
+                Name="TBL_Output">
+                Hello world
+            </TextBlock>
+            <Grid Background="red"
+                  Name="Grid_Main">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Button Margin="10" Click="HiddenButton_Click">Hidden</Button>
+                <Button Margin="10" Grid.Row="1" Click="VisibleButton_Click">Visible</Button>
+                <Button Margin="10" Grid.Row="2" Click="CollapsedButton_Click">Collapsed</Button>
+            </Grid>
+        </DockPanel>-->
+
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="Bestand" 
+                          Click="Bestand_Click"
+                          IsCheckable="True">
+
+                </MenuItem>
+                <MenuItem Header="Bewerken"
+                          ToolTip="Dit bewerkt de applicatie">
+
+                </MenuItem>
+                <MenuItem Header="View">
+                    <MenuItem Header="Fill"
+                              Click="Fill_Click"></MenuItem>
+                    <MenuItem Header="None"
+                              Click="None_Click"></MenuItem>
+                    <MenuItem Header="Uniform"
+                              Click="Uniform_Click"></MenuItem>
+                    <MenuItem Header="Uniform to fill"
+                              Click="UniformFill_Click"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Premium Feature"
+                          IsEnabled="False">
+
+                </MenuItem>
+                <MenuItem Header="Afsluiten" Click="Afsluiten_Click">
+
+                </MenuItem>
+            </Menu>
+            <Image Source="/Resources/Image.jpg" 
+                  Name="BackgroundImage">
+
+            </Image>
+
+        </DockPanel>
+
+    </Grid>
+</Window>

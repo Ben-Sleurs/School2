@@ -1,0 +1,44 @@
+﻿<Window x:Class="SelectieDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SelectieDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox 
+            Name="InputTB"
+            HorizontalAlignment="Left" 
+            Margin="66,51,0,0" 
+            Text="TextBox" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="175" Height="86" />
+        <Button 
+            Name="Is_even"
+            Content="Is even" 
+            HorizontalAlignment="Left" 
+            Margin="588,51,0,0" 
+            VerticalAlignment="Top" 
+            Height="86" Width="109" 
+            Click="Is_even_Click"/>
+        <Button 
+            Name="Is_Lekker"
+            Content="Is Lekker?" 
+            HorizontalAlignment="Left" 
+            Margin="588,181,0,0" 
+            VerticalAlignment="Top" 
+            Height="59" Width="109" 
+            Click="Is_Lekker_Click"/>
+        <Button 
+            Name="Conversion"
+            Content="Conversion" 
+            HorizontalAlignment="Left" 
+            Margin="588,290,0,0" 
+            VerticalAlignment="Top" 
+            RenderTransformOrigin="0.563,0.75" 
+            Width="109" Height="50" Click="Conversion_Click"/>
+
+    </Grid>
+</Window>

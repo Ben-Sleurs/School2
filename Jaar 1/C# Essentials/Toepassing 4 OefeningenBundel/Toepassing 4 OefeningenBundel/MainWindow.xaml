@@ -1,0 +1,121 @@
+﻿<Window x:Class="Toepassing_4_OefeningenBundel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Toepassing_4_OefeningenBundel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock 
+            Name="TB_Ondernemingsnummer"
+            HorizontalAlignment="Left" 
+            Margin="63,63,0,0" 
+            Text="Ondernemingsnummer" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock 
+            Name="TB_Prijs"
+            HorizontalAlignment="Left" 
+            Margin="63,113,0,0" 
+            Text="Prijs" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock 
+            Name="TB_Aantal"
+            HorizontalAlignment="Left" 
+            Margin="63,163,0,0" 
+            Text="Aantal" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"
+            FontSize="16"/>
+        <TextBlock 
+            Name="TB_Te_betalen"
+            HorizontalAlignment="Left" 
+            Margin="63,213,0,0" 
+            Text="Te betalen" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"
+            FontSize="16"/>
+        <TextBox 
+            Name="Invulveld_Ondernemingsnummer"
+            HorizontalAlignment="Left" 
+            Margin="297,63,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="100"
+            FontSize="16"/>
+        <TextBox 
+            Name="Invulveld_Prijs"
+            HorizontalAlignment="Left"
+            Margin="297,113,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="140"
+            FontSize="16"/>
+        <TextBox 
+            Name="Invulveld_Aantal"
+            HorizontalAlignment="Left" 
+            Margin="297,163,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="140"
+            FontSize="16"/>
+        <TextBox 
+            Name="Invulveld_Te_betalen"
+            HorizontalAlignment="Left"
+            Margin="297,213,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="140"
+            FontSize="16"
+            IsReadOnly="True" FontWeight="Bold"/>
+        <TextBox 
+            Name="Invulveld_Controlenummer"
+            HorizontalAlignment="Left" 
+            Margin="413,63,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="24" Height="23"
+            FontSize="16"
+            IsReadOnly="False"/>
+        <Button 
+            Name="Button_Controle_nummer"
+            Content="Controle nummer" 
+            HorizontalAlignment="Left" 
+            Margin="557,63,0,0" 
+            VerticalAlignment="Top" 
+            Width="140" Height="30"
+            FontSize="16" Click="Button_Controle_nummer_Click"/>
+        <Button 
+            Name="Button_Bereken"
+            Content="Bereken" 
+            HorizontalAlignment="Left" 
+            Margin="557,113,0,0" 
+            VerticalAlignment="Top" 
+            Width="140" Height="30"
+            FontSize="16"/>
+        <Button 
+            Name="Button_Wissen"
+            Content="Wissen" 
+            HorizontalAlignment="Left" 
+            Margin="557,163,0,0" 
+            VerticalAlignment="Top" 
+            Width="140" Height="30"
+            FontSize="16"/>
+        <Button 
+            Name="Button_Sluiten"
+            Content="Sluiten" 
+            HorizontalAlignment="Left" 
+            Margin="557,213,0,0" 
+            VerticalAlignment="Top" 
+            Width="140" Height="30"
+            FontSize="16"/>
+
+    </Grid>
+</Window>

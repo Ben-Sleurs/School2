@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:omgdi="http://www.omg.org/spec/DD/20100524/DI" xmlns:omgdc="http://www.omg.org/spec/DD/20100524/DC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="sid-38422fae-e03e-43a3-bef4-bd33b32041b2" targetNamespace="http://bpmn.io/bpmn" exporter="bpmn-js (https://demo.bpmn.io)" exporterVersion="8.7.2">
+  <collaboration id="Collaboration_1b5327d">
+    <participant id="Participant_1523cu3" processRef="Process_1" />
+    <participant id="Participant_0me5f7u" processRef="Process_004xjtn" />
+    <messageFlow id="Flow_1jokkad" sourceRef="Activity_1mipan6" targetRef="Event_1cf7nfl" />
+  </collaboration>
+  <process id="Process_1" isExecutable="false">
+    <laneSet id="LaneSet_1arehg8" />
+    <startEvent id="Event_1cf7nfl" name="Notificatie aangekocht boek">
+      <outgoing>Flow_09lhjtp</outgoing>
+    </startEvent>
+    <task id="Activity_0ec3hsk" name="Kijkt of boek in voorraad is">
+      <incoming>Flow_09lhjtp</incoming>
+      <outgoing>Flow_08avjuu</outgoing>
+    </task>
+    <intermediateThrowEvent id="Event_13qswt9" name="Splitsing">
+      <incoming>Flow_08avjuu</incoming>
+      <outgoing>Flow_0m0xhul</outgoing>
+      <outgoing>Flow_1sfev16</outgoing>
+    </intermediateThrowEvent>
+    <task id="Activity_1a2vz2d" name="Boek wordt uit voorraad gehaald en ingepakt voor verzending">
+      <incoming>Flow_1sfev16</incoming>
+    </task>
+    <task id="Activity_1mwziud" name="de aankoopdienst wordt verwittigd om nieuwe boeken te komen">
+      <incoming>Flow_0m0xhul</incoming>
+    </task>
+    <sequenceFlow id="Flow_09lhjtp" sourceRef="Event_1cf7nfl" targetRef="Activity_0ec3hsk" />
+    <sequenceFlow id="Flow_08avjuu" sourceRef="Activity_0ec3hsk" targetRef="Event_13qswt9" />
+    <sequenceFlow id="Flow_1sfev16" sourceRef="Event_13qswt9" targetRef="Activity_1a2vz2d" />
+    <sequenceFlow id="Flow_0m0xhul" sourceRef="Event_13qswt9" targetRef="Activity_1mwziud" />
+  </process>
+  <process id="Process_004xjtn">
+    <startEvent id="Event_1u4efn6" name="Vrije tijd">
+      <outgoing>Flow_1mvig1p</outgoing>
+    </startEvent>
+    <task id="Activity_0376ptx" name="Bestelt boek">
+      <incoming>Flow_1mvig1p</incoming>
+      <outgoing>Flow_0ec5c6o</outgoing>
+    </task>
+    <task id="Activity_1mipan6" name="betaalt boek">
+      <incoming>Flow_0ec5c6o</incoming>
+    </task>
+    <sequenceFlow id="Flow_1mvig1p" sourceRef="Event_1u4efn6" targetRef="Activity_0376ptx" />
+    <sequenceFlow id="Flow_0ec5c6o" sourceRef="Activity_0376ptx" targetRef="Activity_1mipan6" />
+  </process>
+  <bpmndi:BPMNDiagram id="BpmnDiagram_1">
+    <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Collaboration_1b5327d">
+      <bpmndi:BPMNShape id="Participant_1523cu3_di" bpmnElement="Participant_1523cu3" isHorizontal="true">
+        <omgdc:Bounds x="160" y="480" width="780" height="330" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_09lhjtp_di" bpmnElement="Flow_09lhjtp">
+        <omgdi:waypoint x="248" y="580" />
+        <omgdi:waypoint x="420" y="580" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_08avjuu_di" bpmnElement="Flow_08avjuu">
+        <omgdi:waypoint x="520" y="580" />
+        <omgdi:waypoint x="632" y="580" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1sfev16_di" bpmnElement="Flow_1sfev16">
+        <omgdi:waypoint x="668" y="580" />
+        <omgdi:waypoint x="820" y="580" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0m0xhul_di" bpmnElement="Flow_0m0xhul">
+        <omgdi:waypoint x="650" y="598" />
+        <omgdi:waypoint x="650" y="710" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Event_1cf7nfl_di" bpmnElement="Event_1cf7nfl">
+        <omgdc:Bounds x="212" y="562" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="188" y="605" width="85" height="27" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ec3hsk_di" bpmnElement="Activity_0ec3hsk">
+        <omgdc:Bounds x="420" y="540" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_13qswt9_di" bpmnElement="Event_13qswt9">
+        <omgdc:Bounds x="632" y="562" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="629" y="532" width="42" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1a2vz2d_di" bpmnElement="Activity_1a2vz2d">
+        <omgdc:Bounds x="820" y="540" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1mwziud_di" bpmnElement="Activity_1mwziud">
+        <omgdc:Bounds x="600" y="710" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Participant_0me5f7u_di" bpmnElement="Participant_0me5f7u" isHorizontal="true">
+        <omgdc:Bounds x="160" y="80" width="600" height="250" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1mvig1p_di" bpmnElement="Flow_1mvig1p">
+        <omgdi:waypoint x="258" y="180" />
+        <omgdi:waypoint x="330" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0ec5c6o_di" bpmnElement="Flow_0ec5c6o">
+        <omgdi:waypoint x="430" y="180" />
+        <omgdi:waypoint x="540" y="180" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Event_1u4efn6_di" bpmnElement="Event_1u4efn6">
+        <omgdc:Bounds x="222" y="162" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <omgdc:Bounds x="221" y="205" width="38" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0376ptx_di" bpmnElement="Activity_0376ptx">
+        <omgdc:Bounds x="330" y="140" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1mipan6_di" bpmnElement="Activity_1mipan6">
+        <omgdc:Bounds x="540" y="140" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1jokkad_di" bpmnElement="Flow_1jokkad">
+        <omgdi:waypoint x="590" y="220" />
+        <omgdi:waypoint x="590" y="391" />
+        <omgdi:waypoint x="230" y="391" />
+        <omgdi:waypoint x="230" y="562" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</definitions>

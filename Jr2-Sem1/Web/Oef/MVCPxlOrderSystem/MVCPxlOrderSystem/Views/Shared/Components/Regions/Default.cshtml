@@ -1,0 +1,7 @@
+﻿@model IEnumerable<Region>
+@foreach(var region in Model)
+{
+    <a class="btn btn-block"
+   asp-action="Index" asp-controller="Home"> @region.RegionName</a>
+    <br />
+}

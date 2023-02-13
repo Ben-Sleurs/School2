@@ -1,0 +1,65 @@
+nav{
+    width: 100%;
+    background-color: black;
+    border-bottom: coral double 15px;
+}
+nav img{
+    display:inline-block;
+    background-color: white;
+    horiz-align: center;
+    vertical-align: middle;
+    width: 20%;
+    padding: 2%;
+}
+.buttons{
+    height: 100%;
+    float: right;
+    display: inline-block;
+    margin:42px 20px;
+}
+a{
+    margin:10px;
+    font-family: Calibri, serif;
+    padding: 5px;
+    border: solid 2px;
+    color: white;
+}
+a:visited{
+    color: red;
+    border: solid 2px red;
+}
+a:hover{
+    color: coral;
+    border: solid 2px coral;
+    box-shadow: 3px 3px coral;
+}
+a:active{
+    color: gold;
+    border: solid 2px gold;
+    box-shadow: -3px -3px gold;
+    border-radius: 7px;
+}
+
+article{
+    margin: 0 20px;
+}
+article img{
+    float: left;
+    margin:0 25px 25px 0;
+}
+.sfeer{
+    width:90%;
+    padding: 5%;
+}
+.sfeer img{
+    width: 30%;
+    opacity: 50%;
+    text-align: center;
+
+}
+.sfeer img:hover{
+    width: 38%;
+    height: 38%;
+    border: solid black 2px;
+    opacity: 100%;
+}

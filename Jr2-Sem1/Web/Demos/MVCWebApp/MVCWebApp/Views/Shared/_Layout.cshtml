@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MVCWebApp</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MVCWebApp.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div>
+            <h2>Header title</h2>
+        </div>
+    </header>
+    <div class="row m-1 p-1">
+        <div id="menu" class="col-3 border border-primary">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <br/>
+            <a asp-controller="Test" asp-action="Index">Test</a>
+            <br/>
+            <a asp-controller="Test" asp-action="TestViewBag">viewbag dingen of zoiets idk deze link is veel te lang en neemt veel te veel plaats in</a>
+            <br/>
+            <a asp-controller="Test" asp-action="Formulier"> (^: Bro hier zit een formulier in! :^)</a>
+        </div>
+        <div id="main" class="col-9 border border-primary">
+            @RenderBody()
+        </div>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            Footer - @DateTime.Now.ToString("dd/MM/yyyy")
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

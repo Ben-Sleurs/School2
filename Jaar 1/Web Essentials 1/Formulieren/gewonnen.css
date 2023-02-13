@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    font-family: Calibri sans-serif;
+}
+label{
+    display: inline-block;
+    width: 100px;
+    margin: 5px 0;
+}
+input{
+    width: calc(50% - 106px);
+    margin: 5px 0;
+}
+.Half{
+    width: calc(25% - 107px);
+}
+.LabelHalf{
+    width: 100px
+}
+button{
+    margin: 5px;
+    width: 30%;
+    height: 30px;
+}
+
+@media screen and (max-width:600px) {
+    input{
+        width: 100%;
+    }
+    .Half{
+        width: 100%;
+    }
+    .LabelHalf{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+
+
+}

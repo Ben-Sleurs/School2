@@ -1,0 +1,54 @@
+﻿@model IEnumerable<HogeschoolPXL.Models.Data.Inschrijving>
+
+@{
+    ViewData["Title"] = "Index";
+    
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Student)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VakLector)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AcademieJaar)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+            var startDatum = item.AcademieJaar.StartDatum.Year;
+            var eindDatum = startDatum + 1;
+            <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Student.Gebruiker.Naam)
+                @Html.DisplayFor(modelItem => item.Student.Gebruiker.Voornaam)
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VakLector.Vak.VakNaam) -
+                @Html.DisplayFor(modelItem => item.VakLector.Lector.Gebruiker.Naam)
+                @Html.DisplayFor(modelItem => item.VakLector.Lector.Gebruiker.Voornaam)
+            </td>
+            <td>
+                @startDatum - @eindDatum
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.InschrijvingId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.InschrijvingId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.InschrijvingId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

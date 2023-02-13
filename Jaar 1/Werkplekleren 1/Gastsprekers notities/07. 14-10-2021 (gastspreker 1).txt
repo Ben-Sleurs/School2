@@ -1,0 +1,99 @@
+-------------
+Gastspreker 1
+-------------
+
+GIT door Martijn Degrève - Eurofins DTB
+Technical Lead
+
+--------
+Eurofins
+--------
+
+testing en support
+
++50000 werknemers
++1000 test sites
+actief in +50 landen
+5 miljard omzet
+
+begonnen als Testronic Labs 2014
+opgegaan in Eurofins 2016
+USA presence 2017
+UK expansion 2018
+Cyber security 2019
+
+---------------------------------------------------------------------------------------------
+Cordacampus gebouw 1 (!!!)
+---------------------------------------------------------------------------------------------
+
+SCM (Source Control Management)
+SLA (Service Level Agreement)
+
+manier om code te delen via cloud
+repositories = pseudo-database
+(remote depository = cloud database, niet op eigen labtop)
+
+----------------
+voor- en nadelen
+----------------
+
+geschiedenis van aanpassingen
+backup van geschreven code
+altijd meest recente versie beschikbaar
+met verschillende mensen tegelijk aan 1 project werken
+
+---------------------------------------------------------------------------------------------
+
+---------------------------
+GitHub / GitLab / BitBucket
+---------------------------
+
+Hoe?
+
+Via command line
+Via IDE (bv visual studio, eclipse,..)
+Via GUI clients
+
+----------------------------------------------------------------------------------------------
+
+-----------
+Waarom GIT?
+-----------
+
+locaal werken
+snel
+branches
+ez merging
+distributed
+staging
+gemakkelijk te leren
+industrie standaard
+
+branches kunnen te lang worden waardoor overzicht verloren gaat (meer kans op conflicten bij merging)
+oplossing -> trunk based development, vaker en makkelijker mergen om branches kort te houden
+
+
+
+--------------
+best practices
+--------------
+
+
+micro commits
+clear names
+commit early, commit often
+commit only related work
+don't commit generated files
+
+ticket links
+don't alter history
+learn the CLI (Command Line Interface)
+use project overhead
+rebase often
+learn more than basic pull/push cycles
+
+--------
+commands
+--------
+
+zie afbeeldingen

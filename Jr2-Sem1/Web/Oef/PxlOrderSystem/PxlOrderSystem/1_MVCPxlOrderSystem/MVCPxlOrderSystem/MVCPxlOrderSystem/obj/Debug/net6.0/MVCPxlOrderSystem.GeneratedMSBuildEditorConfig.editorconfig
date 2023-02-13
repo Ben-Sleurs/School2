@@ -1,0 +1,128 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MVCPxlOrderSystem
+build_property.RootNamespace = MVCPxlOrderSystem
+build_property.ProjectDir = C:\School\Jr2-Sem1\Web\Oef\PxlOrderSystem\PxlOrderSystem\1_MVCPxlOrderSystem\MVCPxlOrderSystem\MVCPxlOrderSystem\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\School\Jr2-Sem1\Web\Oef\PxlOrderSystem\PxlOrderSystem\1_MVCPxlOrderSystem\MVCPxlOrderSystem\MVCPxlOrderSystem
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Client/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Client/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Client/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Client/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Client/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Home/Region.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Home/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Order/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Order/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Order/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Order/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Order/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Region/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Region/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Region/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Region/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Region/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVnaW9uXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Shared/Components/Region/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUmVnaW9uXERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/PxlOrderSystem/PxlOrderSystem/1_MVCPxlOrderSystem/MVCPxlOrderSystem/MVCPxlOrderSystem/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-7j23btxsq0

@@ -1,0 +1,233 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+details > summary {
+    list-style: none;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+a{
+    color: #F4F4F4;
+    text-decoration: none;
+}
+a:visited{
+    color: #F4F4F4;
+}
+a:hover{
+    text-decoration: underline;
+}
+#Container{
+    display: Flex;
+    flex-wrap: wrap;
+}
+#Image{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    background-color: #404040;
+    order: 1;
+    width: 100%;
+
+
+}
+#Image img{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+
+}
+#Image img:hover{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    box-shadow: 10px 10px 5px black;
+    transform: translate(-10px,-10px);
+}
+#Image img:active{
+    border: 5px white solid;
+    box-shadow: none;
+    transform: translate(0px,0px);
+}
+#Randinfo{
+    background-color: #404040;
+    order:3;
+    width: 100%;
+}
+#Randinfo{
+    color: #F4F4F4;
+}
+#Contact{
+    margin: 30px 0;
+}
+#Contact h2{
+    width: 120px;
+    margin: 10px 35px;
+    padding-bottom: 5px;
+    border-bottom: #F4F4F4 solid 3px;
+}
+#Contact ul li{
+    margin: 10px -5px;
+    list-style: none;
+
+}
+#Contact ul li img{
+    width: 20px;
+    height: 20px;
+    filter: invert(100%) sepia(96%) saturate(15%) hue-rotate(212deg) brightness(104%) contrast(104%);
+    transform: translate(0px,3px);
+}
+
+
+.Vaardigheden{
+    margin: 30px 0 30px 35px;
+}
+.Vaardigheden h2{
+    width: 200px;
+    padding-bottom: 5px;
+    border-bottom: #F4F4F4 solid 3px;
+}
+.Vaardigheden.Desktop{
+    display: none;
+}
+table{
+    border-collapse: collapse;
+
+}
+th{
+    border:solid 2px black;
+    padding: 2px;
+    font-size: 24px;
+}
+td{
+    border:solid 2px black;
+    padding: 2px;
+}
+tbody tr td:first-child{
+    padding-right: 30px;
+}
+tbody tr:nth-child(odd){
+    background-color: #F4F4F4;
+    color: #404040;
+}
+tbody tr:nth-child(even){
+    background-color: #404040;
+    color: #F4F4F4;
+}
+
+#Maininfo{
+    background-color: #F4F4F4;
+    order: 2;
+    width: 100%;
+    padding: 20px 35px;
+}
+#Maininfo *{
+    color: #404040;
+}
+#Titel{
+    margin-bottom:  10px;
+}
+#Maininfo h1{
+    margin: 0;
+}
+#Maininfo h2{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+Details Summary{
+    padding: 2px;
+    display: inline;
+    font-size: 25px;
+    font-weight: bold;
+    border: #404040 solid 2px;
+    margin: 5px 0px;
+}
+Details Summary:hover{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    box-shadow: 4px 4px 2px black;
+    transform: translate(-4px,-4px);
+}
+
+Details h4{
+    margin: 5px 10px;
+    font-size: 17px;
+}
+
+footer{
+    padding: 0 10px;
+    background-color: #CDAC81;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+#Maininfo details ul{
+    margin: 0 15px;
+    padding: 10px;
+}
+footer *{
+    color: #00303F;
+    font-weight: bold;
+}
+footer p{
+    padding: 0 20px;
+}
+footer a {
+    padding: 0 20px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+footer a:visited{
+    color:#00303F ;
+}
+
+@media screen and (min-width: 480px){
+    #Container{
+        display: grid;
+        grid-template-columns: minmax(350px,25%) 75%;
+        grid-template-rows: 300px auto;
+    }
+    #image{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #Image img{
+        width: 200px;
+        height: 200px;
+    }
+    #Contact{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #Maininfo{
+        grid-column: 2;
+        grid-row: 1 / span 2;
+
+    }
+    .Vaardigheden.Mobile{
+        display: none;
+    }
+    .Vaardigheden.Desktop{
+        display: block;
+    }
+    .Vaardigheden{
+
+        margin: 30px 0 30px 35px;
+    }
+
+}

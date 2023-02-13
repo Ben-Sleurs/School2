@@ -1,0 +1,123 @@
+*{
+    font-family: Roboto, serif;
+    background-color: #4C5868;
+}
+h1{
+    color:#FAC999;
+}
+h2{
+    color:white;
+}
+h3{
+    margin-top: 0px;
+}
+
+nav{
+    padding:10px;
+}
+a {
+    color:white;
+
+}
+a:hover{
+    font-size:110%;
+    color: #FAC999;
+
+}
+.button{
+    border:white 2px solid;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 20px;
+}
+.button:hover{
+    background-color: #FAC99950
+}
+.festivals{
+    margin-left:14px;
+}
+article{
+    margin: 20px;
+    color: black;
+}
+ul{
+  list-style-image: url(assets/noot.png);
+}
+
+.pukkelpop{
+    border:solid 2px #A37A4D;
+    background-color: #AAD8EF;
+    padding: 15px 0;
+
+}
+.pukkelpop *{
+    background-color: #AAD8EF;
+    color: black;
+    margin-left: 15px;
+}
+.rockwerchter{
+    border:solid 2px #A37A4D;
+    background-color: #FCDCB5;
+    padding: 15px 0;
+
+}
+.rockwerchter *{
+    background-color: #FCDCB5;
+    color: black;
+    margin-left: 15px;
+}
+.tommorowland{
+    border:solid 2px #A37A4D;
+    background-color: #FCCEFF;
+    padding: 15px 0;
+
+}
+.tommorowland *{
+    background-color: #FCCEFF;
+    color: black;
+    margin-left: 15px;
+}
+.graspop{
+    border:solid 2px #A37A4D;
+    background-color: #BEF7B2;
+    padding: 15px 0;
+
+}
+.graspop *{
+    background-color: #BEF7B2;
+    color: black;
+    margin-left: 15px;
+}
+.dour{
+    border:solid 2px #A37A4D;
+    background-color: #F9F6BF;
+    padding: 15px 0;
+
+}
+.dour *{
+    background-color: #F9F6BF;
+    color: black;
+    margin-left: 15px;
+}
+
+.alles{
+    width: 100%;
+
+}
+.links{
+float: left;
+    display:inline-block;
+    width:40%;
+
+}
+.albums{
+
+    display:inline-block;
+    width:30%;
+
+}
+
+.clear_both{
+    clear:both;
+}
+

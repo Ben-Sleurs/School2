@@ -1,0 +1,98 @@
+﻿<Window x:Class="OEF_24_Sparen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OEF_24_Sparen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Weekgeld" 
+               Name="L_Weekgeld"
+               HorizontalAlignment="Left" 
+               Margin="50,50,0,0" 
+               VerticalAlignment="Top"
+               HorizontalContentAlignment="right"
+               Width="250" Height="45"
+               FontSize="24"/>
+        <Label Content="Wekelijkse Verhoging" 
+              Name="L_Verhoging"
+               HorizontalAlignment="Left" 
+               Margin="50,100,0,0" 
+               VerticalAlignment="Top"
+              HorizontalContentAlignment="right"
+               Width="250"
+               FontSize="24"/>
+        <Label Content="Gewenst Spaarbedrag"
+              Name="L_Spaarbedrag"
+               HorizontalAlignment="Left" 
+               Margin="50,150,0,0" 
+               VerticalAlignment="Top"
+              HorizontalContentAlignment="right"
+               Width="250"
+               FontSize="24"/>
+        <TextBox 
+            Name="TB_WeekgeldInput"
+            HorizontalAlignment="Left" 
+            Margin="350,55,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"
+            FontSize="24"
+            Width="200"/>
+        <TextBox 
+            Name="TB_VerhogingInput"
+            HorizontalAlignment="Left" 
+            Margin="350,105,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"
+            FontSize="24"
+            Width="200"/>
+        <TextBox 
+            Name="TB_SpaarbedragInput"
+            HorizontalAlignment="Left" 
+            Margin="350,155,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top"
+            FontSize="24"
+            Width="200"/>
+        <Button 
+            Name="B_Bereken"
+            Content="Bereken" 
+            HorizontalAlignment="Left" 
+            Margin="100,250,0,0" 
+            Width="200" Height="40"
+            VerticalAlignment="Top"
+            FontSize="20" Click="B_Bereken_Click"/>
+        <Button 
+            Name="B_Wissen"
+            Content="Wissen" 
+            HorizontalAlignment="Left" 
+            Margin="100,300,0,0" 
+            Width="200" Height="40"
+            VerticalAlignment="Top"
+            FontSize="20" Click="B_Wissen_Click"/>
+        <Button 
+            Name="B_Afsluiten"
+            Content="Afsluiten" 
+            HorizontalAlignment="Left" 
+            Margin="100,350,0,0" 
+            Width="200" Height="40"
+            VerticalAlignment="Top"
+            FontSize="20" Click="B_Afsluiten_Click"/>
+        <TextBox 
+            Name="TB_Output"
+            IsReadOnly="true"
+            HorizontalAlignment="Left" 
+            Margin="350,250,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="300" Height="140"
+            FontSize="16"/>
+
+
+    </Grid>
+</Window>

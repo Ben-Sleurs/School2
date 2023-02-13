@@ -1,0 +1,184 @@
+Oracle
+PostgreSQL
+MS SQL
+MySQL
+MariaDB
+
+=> ISO standaard implementeren
+
+----------------------------------------------------------------
+
+DML (Data Manipulation language)
+(Syllabus => hoofdstuk 6)
+INSERT: rijen toevoegen
+UPDATE: rijen aan te passen
+DELETE: rijen verwijderen
+
+DDL (Data definition Language)
+DROP TABLE: tabel verwijderen
+CREATE TABLE: tabel aanmaken
+ALTER TABLE: tabel veranderen
+CREATE VIEW: view aanmaken (virtuele tabel: query opslaan) => Hoofdstuk 5
+	create view AlleMedewerkers as
+		select * medewerkers;
+
+----------------------------------------------------------------
+
+DCL (Data Control Languag)
+	(zie script gebruiken_student.sql)
+	=> gebruiker aanmaken
+	=> gebruiker rechten geven (privileges)
+
+Basisbegrippen SQL
+select * from medewerkers where voorn='JANA'; => dit werkt
+select * from medewerkers where voorn='Jana': => werkt niet
+	Data is case sensitive (SQL zelf niet; bv functies, kolomnamen,.. niet)
+		seLecT * fRoM MedEWErkers; => werkt
+
+(teksteditors: Visual Studio Code, Atom, Sublime Text,Vim, Emacs,...)
+
+-------------------------------------------------
+
+Verschil C# en SQL: strings "" in C#, '' in SQL
+	"" in SQL enkel voor alias (bv as "Volledige Naam" => Volledige naam, as VolledigeNaam => VOLLEDIGENAAM)
+
+Rekenkundige operatoren: +,-,*,/
+	select voorn, naam, maandsal * 12 as jaarsal from medewerkers;
+
+Concattenatie (string aan elkaar plakken)
+	select voorn || ' ' || naam as "Volledige Naam" from medewerkers;
+
+vergelijkingsoperatoren
+>, <, >=, <=, = != of <>
+
+select mnr, voorn, naam from medewerkers where mnr > 7500;
+select voorn, naam from medewerkers where naam='WOUTERS' and voorn='SVEN';
+select voorn, naam from medewerkers where (naam='WOUTERS' or naam='CASPERS') and (voorn='...' or voorn='...') x () x ();..
+
+------------
+
+SQL commentaar:
+	-- (single line)
+	/*	*/ (multi line)
+
+------------------------------------------------------------------------
+WEEK 3:
+
+voor NULL => 0
+x= kolom of tabel
+y= waarde
+NVL(x,y): stel dat x NULL is, vervang door y
+NVL2(x,y,z): stel dat x niet NULL is, vervang door y, anders door z
+
+
+COALESCE:(x,y,z): geeft als resultaat eersde waarde niet NULL is
+stel x is NULL
+stel y is NULL
+==> resultaat=z
+
+stel x is NULL
+stel y is 10
+stel z is 100
+==> restultaat = y (dus 10)
+select voorn, naam, gbdatum from medewerkers where gbdatum > '01-05-1983'; (deze volgorde datum is in deze tabellen zo ingesteld)
+select voorn, naam, gbdatum from medewerkers where gbdatum > date'1983-05-01'; (date maakt het standaardformaat (yyyy-mm-dd))
+
+
+LIKE
+---------------------------------------------------
+
+select voorn, naam from medewerkers where naam like '%A%'; (select namen met 'A' in)
+
+%: wildcard 0,1, of meer tekens (in vorig voorbeeld: 0 of meedere tekens voor en na A vb jan, jacobs, allard,...)
+
+_: wildcard exact 1 teken (in vorig voorbeeld ('_A_'): 1 teken voor A, 1 teken na bv: Jan maar niet jacobs)
+
+combo voorbeeld: '_L%' => 1 teken voor L, niks of iets na L vb allard
+
+
+CASE
+----------------------------------------------------
+
+
+in C#:
+
+int x=0
+switch (x)
+{
+     case 1:
+	Console.Writeline("Slecht");
+	break;
+     case 2:
+	Console.Writeline("Matig");
+	break;
+     case 3
+	Console.Writeline("Ok");
+	break;
+     case 4:
+	Console.Writeline("Goed");
+	break;
+     case 5:
+	Console.Writeline("Zeer Goed");
+	break;
+     default:
+	Console.Writeline("Niet ingevuld");
+	break;
+
+}
+
+in SQL:
+select cursist, begindatum,evaluatie,
+case evaluatie
+	when 1 then 'Slecht'
+	when 2 then 'Matig'
+	when 3 then 'Ok'
+	when 4 then 'Goed'
+	when 5 then 'Zeer Goed'
+	else 'niet ingevuld'
+end "Beoordeling"
+from inschrijvingen
+where cursus = 'SQL'
+order by evaluatie asc;
+
+---------------------------------------------------------------------------------------------------------------
+
+in C#:
+
+int evaluatie=3;
+if(evaluatie==0)
+{
+  Console.Writeline("Slecht");
+}
+else if (evaluatie < 2)
+{
+  Console.Writeline("Matig");
+}
+else if (evaluatie < 5)
+{
+  Console.Writeline("Ok");
+}else if (evaluatie < 7)
+{
+  Console.Writeline("Goed");
+}else if (evaluatie < 8)
+{
+  Console.Writeline("Zeer goed");
+}
+else
+{
+  Console.Writeline("Uitstekend")
+}
+
+
+in SQL:
+
+zie PPT H4 powerpoint slide 20
+
+
+
+SUBQUERY
+
+GEBRUIK NOOIT =, ALTIJD IN na where!!!!!!
+= probeert 1 element met 1 element te vergelijken
+in kan een tabel vergelijken met 1 element
+anders krijg je "single-row subquery returns more than one row" error
+

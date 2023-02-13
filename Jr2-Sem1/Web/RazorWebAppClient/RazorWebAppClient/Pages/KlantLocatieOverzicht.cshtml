@@ -1,0 +1,27 @@
+﻿@page
+@model RazorWebAppClient.Pages.KlantLocatieOverzichtModel
+@{
+    var klanten = Data.Databank.Klanten;
+    var locaties = Data.Databank.Locaties;
+}
+<div>
+    <h1>Klant locatie overzicht</h1>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Klant</th>
+                <th scope="col">City</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var klant in klanten)
+            {
+                var city = locaties.Where(x => x.LocationId == klant.LocatieId).FirstOrDefault();
+                <tr>
+                    <td>@klant.KlantNaam</td>
+                    <td>@city.City</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

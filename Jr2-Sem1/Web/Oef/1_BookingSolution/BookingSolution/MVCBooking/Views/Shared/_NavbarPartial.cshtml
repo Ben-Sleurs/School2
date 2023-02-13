@@ -1,0 +1,20 @@
+﻿@using ClassLibBooking.DataModels
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<Student> SignInManager
+
+<div class="d-flex bg-primary text-white p-2">
+    <span class="navbar-brand flex-grow-1 ml-2">
+        <a class="btn btn-block link-light border-white" asp-controller="Home" asp-action="Index">Home</a>
+        <a class="btn btn-block link-light border-white" asp-controller="Student" asp-action="Index">Students</a>
+        <a class="btn btn-block link-light border-white" asp-controller="Booking" asp-action="Index">Bookings</a>      
+    </span>
+    @if (SignInManager == null || !SignInManager.IsSignedIn(User))
+    {
+        <a class="btn btn-block link-light border-danger m-1" asp-controller="Account" asp-action="Register">Register</a>
+        <a class="btn btn-block link-light border-danger m-1" asp-controller="Account" asp-action="Login">Login</a>
+    }
+    else
+    {
+        <a class="btn btn-block link-light border-danger m-1" asp-controller="Account" asp-action="Logout">Logout</a>
+    }
+</div>

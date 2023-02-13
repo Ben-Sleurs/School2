@@ -1,0 +1,120 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MVCBibliotheekBENSLE
+build_property.RootNamespace = MVCBibliotheekBENSLE
+build_property.ProjectDir = C:\School\Jr2-Sem1\Web\Oef\Sleurs_Ben_2PROB_C#WEB_EB351\MVCBibliotheekBENSLE\MVCBibliotheekBENSLE\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\School\Jr2-Sem1\Web\Oef\Sleurs_Ben_2PROB_C#WEB_EB351\MVCBibliotheekBENSLE\MVCBibliotheekBENSLE
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Gebruikers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VicnVpa2Vyc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Gebruikers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VicnVpa2Vyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Gebruikers/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VicnVpa2Vyc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Gebruikers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VicnVpa2Vyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Gebruikers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VicnVpa2Vyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Reservaties/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Reservaties/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Reservaties/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Reservaties/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Reservaties/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Shared/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFjY2Vzc0RlbmllZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Shared/_NavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXJQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/VergaderZaals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyZ2FkZXJaYWFsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/VergaderZaals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyZ2FkZXJaYWFsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/VergaderZaals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyZ2FkZXJaYWFsc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/VergaderZaals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyZ2FkZXJaYWFsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/VergaderZaals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVyZ2FkZXJaYWFsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School/Jr2-Sem1/Web/Oef/Sleurs_Ben_2PROB_C\#WEB_EB351/MVCBibliotheekBENSLE/MVCBibliotheekBENSLE/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-88t6umj72s

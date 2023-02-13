@@ -1,0 +1,58 @@
+--------------------------------
+VIEWS
+--------------------------------
+
+view=viruele tabel
+virtueel omdat de tabel zelf niet opgeslagen wordt in database
+maar wel in view query
+
+view query wordt opgeslagen in database
+=> komt in de datadictionary
+
+query => resultaat is tabel
+
+
+
+CREATE [OR REPLACE] VIEW viewnaam [kolomaliassen] AS
+viewquery
+[WITH READ ONLY]
+[WITH CHECK OPTION];
+
+voorbeeld:
+create view mah as
+select m.naam, a.naam as afdeling, a.locatie, hoofd.naam as hoofdnaam
+from medewerkers m
+join afdelingen a
+on m.afd = a.anr
+join medewerkers hoofd
+on a.hoofd=hoofd.mnr;
+
+kijken in tabeloverzicht:
+select * from tab;
+
+beschrijving van kolomdatatypes:
+desc mah;
+
+opzoeken hoe de viewquery is opgeslagen in datadictionary:
+
+set long 999;
+col text format a40 word_wrapped;
+select view_name,text
+from user_views;
+
+view gebruiken in de form van een query;
+select * from mah;
+select naam, afdelingen from mah where afdeling = 'VERKOOP';
+
+view verwijderen;
+drop view mah;
+select * from tab;
+
+nut van views?
+1) vermijden van complexe queries
+2) vergemakkelijken van code hergebruike
+3) security; in de viewquery gevoeligen kolommen bewaren en dan van buitenaf in een query
+deze kolommen niet gebruiken.
+
+nadeel: overhead => view moet opgezocht worden datadictionary telkens als die view gebruik wordt
+

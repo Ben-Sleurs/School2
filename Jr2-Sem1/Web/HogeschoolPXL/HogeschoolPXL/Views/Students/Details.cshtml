@@ -1,0 +1,75 @@
+﻿@model HogeschoolPXL.Models.ViewModels.StudentDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Student.Gebruiker)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Student.Gebruiker.Naam)
+            @Html.DisplayFor(model => model.Student.Gebruiker.Voornaam)
+        </dd>
+    </dl>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Vak
+            </th>
+            <th>
+                Lector
+            </th>
+            <th>
+                Jaar
+            </th>
+            <th>
+                Handboek
+            </th>
+            <th>
+                Studiepunten
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <h5>Inschrijvingen</h5>
+    <hr />
+    <tbody>
+        @foreach (var item in Model.Inschrijvingen)
+        {
+            var startDatum = item.AcademieJaar.StartDatum.Year;
+            var eindDatum = startDatum + 1;
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VakLector.Vak.VakNaam)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VakLector.Lector.Gebruiker.Naam)
+                    @Html.DisplayFor(modelItem => item.VakLector.Lector.Gebruiker.Voornaam)
+                </td>
+                <td>
+                    @startDatum - @eindDatum
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VakLector.Vak.Handboek.Titel)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.VakLector.Vak.Studiepunten)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Student.StudentId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

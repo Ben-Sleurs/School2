@@ -1,0 +1,1 @@
+C:\School\Jr2-Sem1\Mobile\Demos\BindingDemo\BindingDemo\BindingDemo.csproj;x64

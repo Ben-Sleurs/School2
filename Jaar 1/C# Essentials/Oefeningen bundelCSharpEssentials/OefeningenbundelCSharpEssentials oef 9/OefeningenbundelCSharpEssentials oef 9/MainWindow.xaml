@@ -1,0 +1,108 @@
+﻿<Window x:Class="OefeningenbundelCSharpEssentials_oef_9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OefeningenbundelCSharpEssentials_oef_9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label 
+            Name="Label_Jaar"
+            Content="Jaar:" 
+            HorizontalAlignment="Left" 
+            Margin="70,80,0,0" 
+            VerticalAlignment="Top"
+            FontSize="18" Width="170"/>
+        <Label 
+            Name="Label_Studiepunten"
+            Content="Aantal studiepunten" 
+            HorizontalAlignment="Left" 
+            Margin="70,150,0,0" 
+            VerticalAlignment="Top"
+            FontSize="18" Width="170"/>
+        <Label 
+            Name="Label_Inschrijvingsgeld"
+            Content="Inschrijvingsgeld" 
+            HorizontalAlignment="Left" 
+            Margin="70,220,0,0" 
+            VerticalAlignment="Top"
+            FontSize="18" Width="170"/>
+        <TextBox 
+            Name="TB_Jaar"
+            HorizontalAlignment="Left" 
+            Margin="270,80,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="170"
+            Height="35"
+            FontSize="18" TextChanged="TB_Jaar_TextChanged"/>
+        <TextBox 
+            Name="TB_studiepunten"
+            HorizontalAlignment="Left" 
+            Margin="270,150,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="170"
+            Height="35"
+            FontSize="18"/>
+        <TextBox 
+            Name="TB_inschrijvingsgeld"
+            HorizontalAlignment="Left" 
+            Margin="270,220,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="170"
+            Height="35"
+            FontSize="18"/>
+        <Label 
+            Name="Label_isnumeriek"
+            Content="" 
+            HorizontalAlignment="Left" 
+            Margin="470,80,0,0" 
+            Height="35"
+            Width="170"
+            FontSize="18"
+            VerticalAlignment="Top"/>
+        <Label 
+            Name="Label_isschrikkeljaar"
+            Content="" 
+            HorizontalAlignment="Left" 
+            Margin="470,220,0,0" 
+            Height="35"
+            Width="200"
+            FontSize="18"
+            VerticalAlignment="Top"/>
+        <Button 
+            Name="Button_testnumeriek"
+            Content="Test numeriek" 
+            HorizontalAlignment="Left" 
+            Margin="100,320,0,0" 
+            VerticalAlignment="Top"
+            Width="170"
+            Height="45"
+            FontSize="18" Click="Button_testnumeriek_Click"/>
+        <Button 
+            Name="Button_bereken"
+            Content="Bereken" 
+            HorizontalAlignment="Left" 
+            Margin="300,320,0,0" 
+            VerticalAlignment="Top"
+            Width="170"
+            Height="45"
+            FontSize="18" Click="Button_bereken_Click"/>
+        <Button 
+            Name="Button_afsluiten"
+            Content="Afsluiten" 
+            HorizontalAlignment="Left" 
+            Margin="500,320,0,0" 
+            VerticalAlignment="Top"
+            Width="170"
+            Height="45"
+            FontSize="18" Click="Button_afsluiten_Click"/>
+
+    </Grid>
+</Window>

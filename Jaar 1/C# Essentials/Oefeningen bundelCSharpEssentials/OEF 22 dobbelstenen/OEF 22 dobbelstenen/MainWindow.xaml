@@ -1,0 +1,46 @@
+﻿<Window x:Class="OEF_22_dobbelstenen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OEF_22_dobbelstenen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox 
+            Name="TB_Output"
+            HorizontalAlignment="Left" 
+            Margin="200,100,0,0" 
+            Text="" 
+            TextWrapping="Wrap"
+            VerticalScrollBarVisibility="Auto"
+            VerticalAlignment="Top" 
+            Width="340" Height="260"/>
+        <Button 
+            Name="B_Start"
+            Content="Start" 
+            HorizontalAlignment="Left" 
+            Margin="600,100,0,0" 
+            VerticalAlignment="Top" 
+            Height="50" Width="140"
+            IsEnabled="True"
+            FontSize="24" Click="B_Start_Click"/>
+        <Button 
+            Name="B_Opnieuw"
+            Content="Opnieuw" 
+            HorizontalAlignment="Left" 
+            Margin="600,180,0,0" 
+            VerticalAlignment="Top"
+            Height="50" Width="140"
+            FontSize="24" Click="B_Opnieuw_Click"/>
+        <Button 
+            Name="B_Sluiten"
+            Content="Sluiten" 
+            HorizontalAlignment="Left" 
+            Margin="600,260,0,0" 
+            VerticalAlignment="Top"
+            Height="50" Width="140"
+            FontSize="24" Click="B_Sluiten_Click"/>
+
+    </Grid>
+</Window>

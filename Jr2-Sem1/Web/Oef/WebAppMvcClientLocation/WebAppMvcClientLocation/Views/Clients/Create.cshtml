@@ -1,0 +1,25 @@
+﻿@using WebAppMvcClientLocation.Data
+@model Client
+@{
+}
+<h1>Create</h1>
+<form asp-action="CreateKlant" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div>
+        <label asp-for="ClientId"></label>
+        <input asp-for="ClientId" />
+    </div>
+    <div>
+        <label asp-for="LocationId">Location</label>
+        <select asp-for="LocationId">
+            @foreach(var s in Database.Locations){
+                <option value="@s.LocationId">@s.City</option>
+            }
+        </select>
+    </div>
+    <div>
+        <label asp-for="ClientName"></label>
+        <input asp-for="ClientName" />
+    </div>
+    <button type="submit">Create</button>
+</form>

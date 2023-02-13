@@ -1,0 +1,75 @@
+﻿<Window x:Class="Layout_Oef_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Layout_Oef_2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Button
+            Margin="5">
+           Alle knoppen hebben Margin="5" 
+        </Button>
+        <Button
+            Margin="5">
+           Knop B 
+        </Button>
+        <Button
+            Margin="5">
+           Knop C
+        </Button>
+        <Button
+            Margin="5">
+           Knop D 
+        </Button>
+        <Button
+            Margin="5">
+           Knop E 
+        </Button>
+        <WrapPanel HorizontalAlignment="Center">
+            <Button Margin="5">
+                Knop 1
+            </Button>
+            <Button Margin="5">
+                Knop 2
+            </Button>
+            <Button Margin="5">
+                Knop 3
+            </Button>
+            <Button Margin="5">
+                Knop 4
+            </Button>
+            <Button Margin="5">
+                Knop 5
+            </Button>
+            <Button Margin="5">
+                Knop 6
+            </Button>
+            <Button Margin="5">
+                Knop 7
+            </Button>
+            <Button Margin="5">
+                Knop 8
+            </Button>
+            
+        </WrapPanel>
+        <Button
+            Margin="5">
+            Knop F
+        </Button>
+        <Button
+            Margin="5">
+            Knop G
+        </Button>
+        <Button
+            Margin="5">
+            Knop H
+        </Button>
+        <Button
+            Margin="5">
+            Knop I
+        </Button>
+
+    </StackPanel>
+</Window>

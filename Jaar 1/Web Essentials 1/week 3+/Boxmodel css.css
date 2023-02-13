@@ -1,0 +1,21 @@
+*{
+    font-size:105%;
+    box-sizing: border-box;
+}
+.leftbox{
+    display:inline-block;
+    width:50%
+}
+.rightbox{
+    display:inline-block;
+    width: 20%;
+    background-color: grey;
+    border: solid darkgreen 10px;
+    padding:0 1%;
+    margin: 0 14%;
+    min-width:100px;
+    position:relative;
+    bottom:10px;
+
+
+}

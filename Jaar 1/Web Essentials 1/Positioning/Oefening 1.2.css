@@ -1,0 +1,74 @@
+.topleft{
+    margin: 20px 0%;
+    float: left;
+
+}
+.topright{
+    display: inline;
+    margin: 20px 2%;
+    height: 200px;
+    float: left;
+    background-color: #002366;
+    width: calc(96% - 424px);
+}
+.topright::after{
+
+}
+.AudiA7{
+    width: 424px;
+    height: 200px;
+}
+
+.bottomleft{
+    clear: both;
+    float: left;
+    width: 200px;
+    height: 700px;
+    background-color: #002366;
+}
+.bottomright{
+    border: solid black 1px;
+    background-color: #0F52BA;
+    float: left;
+    margin: 0 2%;
+    height: 700px;
+    width: calc(96% - 202px);
+}
+.Interieurfoto{
+    margin: 0px 20px;
+    width:260px;
+    height: 151px;
+    float: left;
+}
+.middle{
+    height: 151px;
+    margin: 30px 0px;
+}
+.bottom{
+    clear:both;
+}
+.bottom>.Interieurfoto{
+    float: right;
+}
+h1{
+    margin: 20px;
+    color: #FFDAB9;
+}
+p{
+    margin: 20px;
+    color: #FFDAB9;
+}
+.p-2{
+    color: black;
+}
+a{
+    color: #FFDAB9;
+    margin: 20px;
+    text-decoration: none;
+}
+.h1-2{
+    color: black;
+}
+h2{
+    margin: 20px;
+}

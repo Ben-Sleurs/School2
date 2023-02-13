@@ -1,0 +1,7 @@
+Selectie in commentaar zetten: 	ctrl-c-k
+Selectie uit commentaar zetten	ctrl-c-u
+
+
+Code snippets: Shortcut om functies uit te schrijven zoals "Console.Writeline()"
+
+bv: cw + tab + tab => Console.Writeline()

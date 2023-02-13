@@ -1,0 +1,85 @@
+/* Naam student:  */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Consolas, Courier New, serif;
+}
+a:visited{
+    color: inherit;
+}
+nav{
+    width: 100%;
+    background-color: #e0e0e0;
+}
+ul{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+nav ul li{
+    list-style: none;
+    margin: 20px;
+
+}
+li img{
+    width: 50px;
+    height: 50px;
+}
+.GreyText{
+    color: #303131;
+    text-decoration: none;
+}
+.GreyText:hover{
+    border-bottom: #303131 1px solid;
+}
+#Klachtenformulier{
+    padding: 10px;
+    margin-left: auto;
+    color: #e0e0e0;
+    background-color: #303131;
+    border: #303131 2px solid;
+    border-radius: 50px;
+}
+#Klachtenformulier:hover{
+    color: #303131;
+    background-color: #e0e0e0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    height:500px;
+    width: 100%;
+    background-image: url("assets/bg_ps.jpg");
+    background-size: cover;
+}
+header img{
+    margin: auto;
+}
+#Main{
+    width:1200px;
+    align-self: center;
+    margin: auto;
+    padding: 30px;
+}
+#Main h1{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#Main h2{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+#Main p{
+    padding: 10px 0 10px 0;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#PS1{
+    float: right;
+    width: 30%;
+    margin: 2%;
+}

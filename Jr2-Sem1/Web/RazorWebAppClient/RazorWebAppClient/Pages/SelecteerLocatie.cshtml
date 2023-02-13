@@ -1,0 +1,16 @@
+﻿@page
+@model RazorWebAppClient.Pages.SelecteerLocatieModel
+@{
+    var locaties = Data.Databank.Locaties;
+    var selectList = locaties.Select(x => new SelectListItem { Text = x.City, Value = x.LocationId.ToString() });
+
+}
+
+<div>
+    <h1>Selecteer Locatie</h1>
+    <form method="post">
+        <select name="SelectLocatie" asp-items="@selectList"></select>
+        <label> </label>
+        <input type="submit" value="Selecteer locatie" class="submit"/>
+    </form>
+</div>

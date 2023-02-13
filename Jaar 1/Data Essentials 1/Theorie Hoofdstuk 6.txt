@@ -1,0 +1,180 @@
+
+
+Hoofdstuk 6: Data Manipulation Language (DML)
+
+
+DQL (Data Query Language): select => opvragen uit database
+DCL (Data Control Language): privileges
+* grant: geeft privileges
+* revoke: ontneemt privileges
+
+DDL (Data Definition Language): create, alter, drop,...
+
+
+Deze les: DML
+--------------------
+INSERT: rijen toevoegen aan tabel
+UPDATE: rijen wijzigingen in tabel
+DELETE: rijen verwijderen uit een tabel
+
+
+Transacties
+-----------
+Wat is een transactie?
+het verrichten van een DML statement (data manipuleren)
+
+COMMIT: wijzigingen definitief doorvoeren
+SAVEPOINT: opslagpunt
+ROLLBACK: teruggaan naar vorig opslagpunt
+
+
+
+INSERT (rijen toevoegen aan tabel)
+-------
+INSERT INTO tabelnaam 
+VALUES (waarde1, waarde2,..., waarden)
+
+=> let op: kolommen moeten staan in de volgorde
+zoals beschreven in
+desc tabelnaam;
+of zie overzicht datamodel (van links naar rechts lezen)
+
+INSERT INTO tabelnaam (kolom1, kolom2,...)
+VALUES (waarde1, waarde2,...)
+
+kan ook via een subquery in plaats van VALUES:
+INSERT INTO tabelnaam (kolom1, kolom2,...)
+SELECT kolom1, kolom2,...
+FROM bepaaldetabel
+JOIN ...
+ON ...
+...
+WHERE ...
+GROUP BY ...
+HAVING ...
+ORDER BY ...;
+
+voorbeelden van INSERT:
+
+1) Voeg een nieuwe medewerker toe (alle kolommen invullen):
+insert into medewerkers
+values (7955, 'NIJS', 'ANNA', 'TRAINER', 7566,
+date '1997-02-13', 2500, NULL, 20);
+
+
+2) Voeg een nieuwe medewerker toe (een paar kolommen invullen):
+kijk ook welke kolommen not null zijn (verplichte kolommen):
+desc medewerkers;
+
+insert into medewerkers (naam, voorn, mnr, maandsal, gbdatum)
+values ('Vos', 'Gert', 7956, 5000, date '1983-05-22');
+
+
+3) Via subquery:
+insert into schalen
+select snr+5, ondergrens + 2300, bovengrens + 2300, 500
+from schalen
+where snr <= 2;
+
+
+UPDATE: gegevens wijzigen
+-----------------------------
+UPDATE tabelnaam
+SET kolomnaam1 = waarde1, kolomnaam2 = waarde2,...
+[WHERE voorwaarde_voor_welke_rijen]
+
+Wat als ik geen WHERE schrijf?
+dan worden alle rijen van de tabel geüpdatet
+
+voorbeelden van update:
+
+1) Meerdere kolommen van medewerker 7369 veranderen:
+update medewerkers
+set functie = 'VERKOPER', maandsal = 5030, comm = 330, afd = 20
+where mnr = 7369;
+
+2) Alle medewerkers krijgen 10% loonsverhoging:
+update medewerkers
+set maandsal = maandsal * 1.1;
+
+3) Alleen medewerkers van het hoofdkantoor krijgen
+10% loonsverhoging (EXAMEN!!!):
+
+update medewerkers
+set maandsal = maandsal * 1.1
+where afd = (select anr from afdelingen where naam = 'HOOFDKANTOOR');
+
+
+DELETE: rijen verwijderen
+---------------------------------
+DELETE FROM tabelnaam;
+
+DELETE FROM tabelnaam
+WHERE voorwaarde;
+
+Wat als ik geen WHERE schrijf?
+Dan wordt alles uit de tabel "tabelnaam" verwijderd.
+
+
+voorbeeldjes van delete:
+delete from schalen
+where snr in (1, 4);
+
+delete from schalen
+where snr = 1 or snr = 4;
+
+delete from schalen;
+
+Verschil tussen DELETE FROM en DROP TABLE:
+------------------------------------------
+
+* DELETE FROM:
+	* gewoon rijen verwijderen uit de tabel
+	* doet niks aan de onderliggende tabelstructuur
+	=> maakt tabel leeg, maar verwijdert ze niet
+	(controleren via: select * from tab)
+* DROP TABLE:
+	* verwijdert de volledige tabel
+	en alle structuren daarop:
+		* privileges, constraints, primary key, foreign keys, indexes,...
+
+
+Voordat je aan examen begint (thuis please...):
+start Crecase2015.sql
+start Vulcase2015.sql
+
+
+
+Transacties
+------------
+Wat is een transactie?
+het verrichten van een DML statement (data manipuleren)
+
+COMMIT: wijzigingen definitief doorvoeren
+SAVEPOINT: opslagpunt aanmaken
+ROLLBACK: teruggaan naar vorig opslagpunt
+
+
+in praktijk:
+commit;
+savepoint naam_van_savepoint;
+rollback;
+rollback to savepoint naam_van_savepoint;
+
+
+Voor examen: zorg dat de tabellen terug in oorspronkelijke toestand zijn
+start Crecase2015.sql
+start Vulcase2015.sql
+
+
+
+
+
+
+
+
+
+
+
+
+

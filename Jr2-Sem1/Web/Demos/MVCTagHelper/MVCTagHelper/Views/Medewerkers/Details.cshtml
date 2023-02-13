@@ -1,0 +1,13 @@
+﻿@model MVCTagHelper.ViewModels.MedewerkerCard
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div medewerker-card-view-model="@Model"></div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.MedewerkerId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

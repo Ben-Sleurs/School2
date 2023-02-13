@@ -1,0 +1,36 @@
+﻿<Window x:Class="WPFListBoxDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFListBoxDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Button Margin="20" 
+                Click="VoegToeButton_Click">
+            Voeg Lid Toe
+        </Button>
+        <TextBox Margin="20 10" 
+                 Name="NieuwLidTextBox">
+            
+        </TextBox>
+        <ComboBox Margin="20 10"
+                  Name="MijnComboBox" SelectionChanged="MijnComboBox_SelectionChanged">
+            <ComboBoxItem>Man</ComboBoxItem>
+            <ComboBoxItem>Vrouw</ComboBoxItem>
+            <ComboBoxItem>Non-Binair</ComboBoxItem>
+            
+        </ComboBox>
+        <ListBox Margin="20 10" Height="200" Name="MijnListBox"
+                 SelectionChanged="MijnListBox_SelectionChanged">
+            <ListBoxItem>Demyan</ListBoxItem>
+            <ListBoxItem>Davy</ListBoxItem>
+            <ListBoxItem>Evelien</ListBoxItem>
+            <ListBoxItem>Vahid</ListBoxItem>
+        </ListBox>
+        <Button Margin="20" 
+                Click="VerwijderButton_Click">
+            Verwijder</Button>
+    </StackPanel>
+</Window>

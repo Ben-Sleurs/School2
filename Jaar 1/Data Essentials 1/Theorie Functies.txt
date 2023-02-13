@@ -1,0 +1,125 @@
+--------------------------------------------------
+Functies
+--------------------------------------------------
+
+functienaam(argument1)
+functienaam(arguemnt1, argument 2,..)
+
+week 4:
+
+1) Numerieke functies (rekenfuncties)
+getallane
+
+2) alfanumerieke functies (tekstfuncties)
+tekst (letters en cijfers)
+
+week 5:
+
+3) Datumfuncties
+datums
+
+week 6:
+
+4) Algemene functies
+eender welk datatype
+
+5) Conversie functies
+om datatypes naar elkaar om te zetten
+(wisselen van datatypes)
+
+
+week 7:
+6) groepsfuncties
+
+
+
+-------------------------
+Rekenfuncties
+------------------------
+
+round(365.789 , 2- => 365.79 (afronden naar 2 decimalen)
+round(5467.245,-1) => 5470 (afronder tot -1 decimalen, is tot tientallen)
+
+
+volledig;
+select round(5467.245,-1) from dual; (dual is sql tabel)
+
+
+--------------------------------------
+Algemene functies
+--------------------------------------
+
+greatest (a,b,c,...): geeft grootste resultaat terug of laatste in alfabet
+vb/ select greatest(0.5,0.6,0.1,-1.0,5.6) from dual;
+=> 5.6
+
+--------------------------------
+least (a,b,c,....): geeft kleinste resultaat terug of eerste in alfabet
+vb/ select least (0.5,0.6,0.1,-1.0,5.6) from dual;
+=> -1
+
+---------------------------
+select least(voorn,naam)j,voorn,naam from medewerkers;
+
+nullif(a,b): Null wanner a=b, a wanneer a!=b
+vb/ select nullif('aap,'beer') from dual;
+=> aap
+vb/ select nullif('aap','aap') from dual;
+=> null
+
+------------------------------
+nvl(x,y): als x gelijk is aan NULL, dan y, anders x
+select naam, maandsal*12 +nvl(comm,0) from medewerkers;
+
+-----------------------------
+nvl2(x,y,z): als x gelijk is aan NULL, dan z, anders y (opgelet!!: omgekeerde volgorde als nvl)
+	     alt: als x niet gelijk is aan NULL, dan y, anders z
+vb/ select nvl2(7,8,9) from dual;
+=> 7 is niet null, dus 9
+vb/ select nvl2(null,9,8) from dual;
+=> null is null dus 8
+
+case
+	when x is not null then 9
+	else 8
+end
+
+------------------
+decode(	x,
+	a1, b1,
+	a2, b2,
+	a3, b3,
+	y)
+
+=case x
+	when a1 then b1
+	when a2 then b2
+	when a3 then b3
+	else y
+end
+
+coalesce(a,b,c,d,...): geeft het eerste element terug dat niet null is
+
+select comm,coalesce(null,null,comm,'element4')
+from medewerkers;
+
+
+
+
+-----------------------------
+Week 6
+-----------------------------
+
+col histogram format a25;        kolom histogram 25 breed maken
+
+select extract(day from date'1992-01-12') from dual;                  	date'aaa' gebruikt yyyy-mm-dd
+select extract(day from to_date'12-01-1992')) from dual;		to_date() gebruikt ingesteld format (hier dd-mm-yyyy)
+
+select sysdate, to_char(sysdate, 'hh24:mi:ss') from dual;
+
+
+
+select to_char(sysdate,'Day day Year year') from dual;
+resultaat: Monday monday Twenty Twenty-One twenty twenty-one     (hoofdletter in Day maakt day ook)
+
+

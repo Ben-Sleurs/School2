@@ -1,0 +1,47 @@
+﻿<Window x:Class="WPF_Veelgebruikteklasses_oef_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Veelgebruikteklasses_oef_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label 
+            Name="Label_Getal"
+            Content="" 
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top" 
+            Height="81" 
+            Width="136"
+            FontSize="50" Margin="60,50,0,0"
+            />
+        <Label 
+            Name="Label_Verstreken"
+            Content="1" 
+            HorizontalAlignment="Left" 
+            Margin="60,191,0,0" 
+            VerticalAlignment="Top" 
+            Height="86" 
+            Width="471"
+            FontSize="50"/>
+        <Button 
+            Name="Button_Verstreken"
+            Content="YEET" 
+            HorizontalAlignment="Left" 
+            Margin="546,262,0,0" 
+            VerticalAlignment="Top" 
+            Height="96" 
+            Width="177"
+            FontSize="50" Click="Button_Verstreken_Click"/>
+        <Label 
+            Name="Label_Test"
+            Content="1" 
+            HorizontalAlignment="Left" 
+            Margin="619,50,0,0" 
+            VerticalAlignment="Top" 
+            Height="100" Width="126"
+            FontSize="50"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model ProductModel
+
+@foreach(var p in Model.Products){
+    <partial name="ProductSummary" model="p"/>
+}
+<br/>
+<page-link paging-info="@Model.PagingInfo"></page-link>

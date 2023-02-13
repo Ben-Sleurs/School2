@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Location>
+@{
+}
+<h1>Locations</h1>
+<a asp-controller="Locations" asp-action="Create">Create new</a>
+<table>
+    <tr>
+        <th>LocationId</th>
+        <th>Postcode</th>
+        <th>City</th>
+        <th></th>
+    </tr>
+    @foreach (var locatie in Model)
+    {
+        <tr>
+            <td>@locatie.LocationId</td>
+            <td>@locatie.Postcode</td>
+            <td>@locatie.City</td>
+            <td>edit|Details|Delete</td>
+        </tr>
+    }
+</table>

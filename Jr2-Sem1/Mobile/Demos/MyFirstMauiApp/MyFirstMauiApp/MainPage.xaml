@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMauiApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Entry x:Name="InputEntry" FontSize="18" Placeholder="Fill this in or something i don't know"
+                   >
+                
+            </Entry>
+            <Button x:Name="TranslateBtn" Clicked="TranslateBtn_Clicked" Text="Translate" WidthRequest="100"></Button>
+            <Slider
+                x:Name="MySlider">
+
+            </Slider>
+            <Label x:Name="OutputLbl" FontSize="18" BackgroundColor="Black" TextColor="Green"></Label>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

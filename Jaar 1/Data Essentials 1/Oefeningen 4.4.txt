@@ -1,0 +1,417 @@
+OEFENINGEN 4.4.1
+-----------------------------------------------
+
+1:
+Select mnr, naam
+from medewerkers;
+
+2:
+select distinct locatie
+from afdelingen;
+
+3:
+select code, omschrijving
+from cursussen;
+
+4:
+select naam,functie
+from medewerkers
+where functie='VERKOPER';
+
+5:
+select naam,functie
+from medewerkers
+where functie!='BOEKHOUDER';
+
+6:
+select * from medewerkers
+where (maandsal>=5000 and functie!='MANAGER');
+
+7:
+select voorn,naam
+from medewerkers
+where (maandsal<2500);
+
+8:
+select naam,locatie
+from afdelingen
+where hoofd=7698;
+
+9:
+select distinct functie
+from medewerkers;
+
+10:
+select mnr, voorn, naam
+from medewerkers
+where functie='TRAINER';
+
+11:
+select voorn,naam,functie,maandsal
+from medewerkers
+where afd=30 and maandsal>2500;
+
+12:
+select locatie
+from afdelingen
+where hoofd=7566;
+
+13:
+select voorn,naam,
+from medewerkers
+where afd in(10,20);
+
+14:
+select voorn,naam,
+maandsal*12 + nvl(comm,0) as "Jaarsalaris"
+from medewerkers;
+
+15:
+select voorn,naam
+from medewerkers
+where naam like '%N';
+
+16:
+select voorn,naam
+from medewerkers
+where naam like '%OO%';
+
+17:
+select voorn,naam,
+Maandsal as "Huidig Maandsal",
+Maandsal*1.1 as "Toekomstig Maandsal"
+from medewerkers;
+
+18:
+select voorn,naam,maandsal
+from medewerkers
+order by maandsal desc;
+
+19:
+select voorn,naam, maandsal
+from medewerkers
+where (maandsal>2000 and maandsal<4000 and maandsal!= 3850 and maandsal!=2600)
+order by maandsal desc;
+
+
+alternatief: between is wel inclusief dus 2000 en 4000 neemt hij ook mee
+
+select naam,maandsal
+FROM medewerkers
+where (maandsal BETWEEN 2000 and 4000) and (maandsal not in (2600,3850))
+order by maandsal desc;
+
+20:
+select voorn,naam,maandsal
+from medewerkers
+order by functie,naam;
+
+21:
+select voorn,naam,
+maandsal*12+
+CASE
+WHEN comm is NULL THEN 0   ('When comm is null' MOET HIER, = werkt niet)
+ELSE Comm
+end as "Jaarsalaris"
+from medewerkers;
+
+-------------------------------------------------------------------------------
+OEFENINGEN 4.4.2
+-------------------------------------------------------------------------------
+
+1:
+select voorn,naam,maandsal
+from medewerkers
+where maandsal>(select maandsal
+		from medewerkers
+		where naam='CLERCKX');
+
+2:
+select voorn,naam
+from medewerkers
+where afd in	(select afd
+		from medewerkers
+		where naam='ALLARD');
+
+3:
+select voorn,naam
+from medewerkers
+where mnr in	(select distinct mnr
+		from inschrijvingen)
+order by naam;
+		
+4:
+select voorn,naam,gbdatum
+from medewerkers
+where gbdatum >	(select gbdatum
+		from medewerkers
+		where naam='JACOBS' and voorn like'E%');
+
+5:
+select voorn,naam
+from medewerkers
+where mnr in	(select distinct cursist
+		from inschrijvingen
+		where (cursus,begindatum) in 	(select cursus,begindatum
+						from uitvoeringen
+						where Locatie = 'MAASEIK'));
+
+6:
+
+VOOR ALLE VERKOPERS
+select omschrijving,code
+from cursussen
+where code in (select cursus
+		from inschrijvingen
+		where cursist in 	(select mnr
+					from medewerkers
+					where functie='VERKOPER'));
+
+
+VOOR AFDELING VERKOOP
+select omschrijving, type
+from cursussen
+where code in	(select cursus
+		from uitvoeringen
+		where (cursus, begindatum) in 	(select cursus,begindatum
+						from inschrijvingen
+						where cursist in	(select mnr
+									from medewerkers
+									where afd in 	(select anr
+											from afdelingen
+											where naam='VERKOOP'))));
+									
+
+
+7:
+select naam,voorn
+from medewerkers
+where mnr in 	
+		(select cursist
+		from inschrijvingen
+		where (cursus,begindatum) in	(select cursus,begindatum
+					from uitvoeringen
+					where docent in		(select mnr
+								from medewerkers
+								where Naam='CASPERS' and voorn like 'J%')));
+
+8:
+select omschrijving
+from cursussen
+where code in
+	(select cursus
+	from uitvoeringen
+	where docent is null);
+
+9:
+select naam,voorn
+from medewerkers
+where comm is null and afd in	(select anr
+				from afdelingen
+				where naam='VERKOOP');
+
+OF
+select naam, voorn 
+from medewerkers 
+where comm is null and afd=30;
+
+10:
+select naam,voorn
+from medewerkers
+where mnr in 	(select cursist
+		from inschrijvingen
+		where (cursus,begindatum) in	(select cursus,begindatum
+						from uitvoeringen
+						where docent is null));
+
+
+
+--------------------------------------------------------------------------------
+OEFENINGEN 4.4.3
+--------------------------------------------------------------------------------
+
+1:
+select voorn,naam, maandsal*3/38*13 as "Uurloon",
+Round(maandsal*3/38*13,2) as "Uurloon 2",
+trunc(maandsal*3/38*13,2) as "Uurloon 3" from medewerkers;
+
+2:
+select distinct initcap(functie) as "1 hoofdletter",
+upper(functie) as "Hoofdletters",
+lower(functie) as "kleine letters" from medewerkers;
+
+3:
+select omschrijving, length(omschrijving) as "tekstlengte"
+from cursussen;
+
+4:
+select naam,
+INSTR(naam,'E',1) as "e 1",
+instr(naam,'E',4) as "e 4",
+instr(naam,'E',1,2) as "e 1 tweede"
+from medewerkers;
+
+5:
+col histogram format a25;                               !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+select naam, length(naam) as "LENGTE",
+rpad('*',length(naam),'*') as "HISTOGRAM"
+from medewerkers;
+
+6:
+select naam,
+CASE
+when instr(naam,'DE ')=1 then ltrim(naam,'DE ')
+when instr(naam,'SEN',length(naam)-3)=(length(naam)-2) then rtrim(naam,'SEN')
+else naam
+end as "Nieuwe naam"
+from medewerkers;
+
+7:
+select naam, anr, concat('AF',anr) as "AFDnr" from afdelingen;
+
+
+8:
+select translate(omschrijving,'WC#wc','ZK-zk') as "omschrijving" from cursussen;
+
+9:
+select naam
+from medewerkers
+order by replace(naam,' ');
+
+10:
+select
+upper(substr(naam,instr(naam,' ')+1))||'('||lower(substr(naam,1,instr(naam,' ')-1))||')'
+as "Naam"
+from medewerkers
+where naam like'% %';
+
+11:
+select * from (select
+naam,
+case	
+when instr(naam,'E') !=0 then greatest(maandsal*2,MNR,nvl(chef,0))
+end as "grootste",
+decode(	greatest(maandsal*2,MNR,nvl(chef,0)),
+	MNR,'MNR',
+	chef,'CHEF',
+	maandsal*2,'MAANDSAL')
+as "test"
+from medewerkers)
+where instr(naam,'E') !=0;
+
+12:
+select naam,
+case
+when instr(naam,'E') !=0 then least(maandsal*2,MNR,nvl(chef,0))
+end as "kleinste",
+case least(maandsal*2,MNR,nvl(chef,0))
+when maandsal*2 then 'maandsal'
+when MNR then 'MNR'
+when nvl(chef,0) then 'CHEF'
+end as "test"
+from medewerkers
+where instr(naam,'E') !=0;
+
+13:
+select MNR, naam, voorn,
+decode(functie,'TRAINER','LERAAR','DIRECTEUR','HOOFD','MEDEWERKER'),
+chef,gbdatum,maandsal,comm,afd
+from medewerkers;
+
+14:
+select
+greatest(MNR-2000, power(ASCII(naam),2)) as "Waarde",
+decode(greatest(MNR-2000, power(ASCII(naam),2)),MNR-2000,'MNR',power(ASCII(naam),2),'eerste letter')
+as "Welke",
+MNR-2000 as "MNR -2000",
+power(ASCII(naam),2) as "kwadraat"
+from medewerkers;
+
+15:
+select naam,functie,
+decode(functie,'TRAINER',TO_CHAR(maandsal,9999),'VERKOPER',TO_CHAR(comm,9999),'ONBELANGRIJK') as "OVERZICHT"
+from medewerkers;
+
+16:
+select naam,
+to_char(gbdatum,'day')||' '||
+extract(day from gbdatum)||' '||
+to_char(gbdatum,'month')
+||extract(year from gbdatum)
+as "GBDate"
+from medewerkers;
+
+alternatief;
+
+select naam,
+to_char(gbdatum,'day dd month yyyy')
+as "GBDate"
+from medewerkers;
+
+17:
+select trunc(sysdate) - date'1993-06-28' from dual;
+
+18:
+select to_char(gbdatum,'"the "ddsp "of" fmmonth yyyysp') from medewerkers;
+
+19:
+select to_char(gbdatum,'IW Q J') from medewerkers
+where naam in ('WOUTERS','SWINNEN');
+
+20:
+select to_char(gbdatum,'hh pm') from medewerkers;
+
+21:
+select gbdatum, interval'6' month +gbdatum
+as "GB +6M"
+from medewerkers;
+
+22:
+select gbdatum,
+sqrt(maandsal) as "maandsal^-1/2",
+round((months_between(sysdate,gbdatum)/12),2) as "Jaren oud"
+from medewerkers;
+
+23:
+select gbdatum,
+to_char(sysdate,'J')-to_char(gbdatum,'J') as "Dagen",
+trunc(months_between(sysdate,gbdatum),0) as "Maanden",
+trunc((months_between(sysdate,gbdatum)/12),0) as "Jaren"
+from medewerkers
+where trunc((months_between(sysdate,gbdatum)/12),0) >34;
+
+24:
+select naam, gbdatum, to_char(last_day(gbdatum),'Day')
+as "laatste maanddag"
+from medewerkers;
+
+25:
+select naam, gbdatum,
+gbdatum +3000,
+next_day(gbdatum + 3000,'friday')
+from medewerkers;
+
+26:
+select functie, naam, maandsal,
+case
+when maandsal<2500 then 'goedkoop'
+else 'duur'
+end as "inkomensklasse"
+from medewerkers
+where gbdatum<date'1984-01-01'
+order by decode(functie,
+		'DIRECTEUR',1,
+		'MANAGER', 2,
+		'VERKOPER', 3,
+		'TRAINER', 4,
+		5);
+
+
+
+
+
+
+
+
+

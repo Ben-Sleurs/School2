@@ -1,0 +1,112 @@
+﻿<Window x:Class="WPFproefexamen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFproefexamen"
+        mc:Ignorable="d"
+        Title="PXL-Shop" Height="450" Width="800">
+    <DockPanel>
+        <StackPanel DockPanel.Dock="Bottom"
+                    Background="Black"
+                    Height="30">
+            <TextBlock
+                Name="TBL_Time"
+                Foreground="white"
+                FontSize="16"
+                Margin="4"
+                Text=""
+                >
+                
+            </TextBlock>
+        </StackPanel>
+        <Grid
+            Name="Grid_Main">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.33*"/>
+                <ColumnDefinition Width="0.33*"/>
+                <ColumnDefinition Width="0.33*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="0.25*"/>
+                <RowDefinition Height="0.25*"/>
+            </Grid.RowDefinitions>
+            <Label
+                Name="Label_Naam"
+                FontSize="20"
+                Margin="10">
+                Product Naam
+            </Label>
+            <Label
+                Grid.Row="1"
+                Name="Label_Prijs"
+                FontSize="20"
+                Margin="10">
+                Product Prijs
+            </Label>
+            <Label
+                Grid.Row="2"
+                Name="Label_Hoeveelheid"
+                FontSize="20"
+                Margin="10">
+                Hoeveelheid
+            </Label>
+            <TextBox
+                Grid.Column="1"
+                Name="TB_Naam"
+                FontSize="20"
+                Margin="10">
+            </TextBox>
+            <TextBox
+                Grid.Column="1"
+                Grid.Row="1"
+                Name="TB_Prijs"
+                FontSize="20"
+                Margin="10">
+            </TextBox>
+            <TextBox
+                Grid.Column="1"
+                Grid.Row="2"
+                Name="TB_Hoeveelheid"
+                FontSize="20"
+                Margin="10">
+            </TextBox>
+            <TextBox
+                Name="TB_Output"
+                Grid.Column="2"
+                Grid.RowSpan="3"
+                FontSize="12"
+                FontFamily="Courier New"
+                Margin="10">
+                
+            </TextBox>
+            <Button
+                Name="Button_Add"
+                Grid.Column="0"
+                Grid.Row="3"
+                FontSize="20"
+                Margin="10" Click="Button_Add_Click">
+                Voeg Toe
+            </Button>
+            <Button
+                Name="Button_Checkout"
+                Grid.Column="1"
+                Grid.Row="3"
+                FontSize="20"
+                Margin="10" Click="Button_Checkout_Click">
+                Check out
+            </Button>
+            <Button
+                Name="Button_Bestelling"
+                Grid.Column="2"
+                Grid.Row="3"
+                FontSize="20"
+                Margin="10" Click="Button_Bestelling_Click">
+                Nieuwe bestelling
+            </Button>
+            
+        </Grid>
+    </DockPanel>
+</Window>

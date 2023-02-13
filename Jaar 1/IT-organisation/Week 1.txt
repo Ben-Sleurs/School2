@@ -1,0 +1,21 @@
+Week 1
+---------------------------------------
+
+Bedrijven op basis van maturiteit
+
+Start-up (vlakke hierarchie, 1 baas rest eronder)
+Scale-up (begin van verticale hiearchie)
+Matuur bedrijf
+
+
+Matrix- of projectorganisatie:
+
+Meerder bazen tegelijk, vaak projectmanager en afdelingsbaas bv
+
+Week 3
+---------------------------------
+
+CTO - Chief Technology Officer: productinnovatie, etc.. , externe functie
+CIO - Chief Information Officer: in bedrijven met veel data (banken, Facebook, ..), zorgt voor labtops binnen bedrijf,..., interne functie
+
+Stuurgroep: groep met belangrijkste stakeholders

@@ -1,0 +1,71 @@
+﻿<Window x:Class="Toepassing_2_OefeningenbundelCSharpEssentials.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Toepassing_2_OefeningenbundelCSharpEssentials"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label 
+            Name ="Straal"
+            Content="Straal (in cm)" 
+            HorizontalAlignment="Left" 
+            Margin="69,57,0,0" 
+            VerticalAlignment="Top" 
+            RenderTransformOrigin="-2.369,0.217"/>
+        <Label 
+            Name ="Omtrek"
+            Content="Omtrek (in cm)" 
+            HorizontalAlignment="Left" 
+            Margin="70,119,0,0" 
+            VerticalAlignment="Top"/>
+        <Label 
+            Name ="Oppervlakte"
+            Content="Oppervlakte in cm^2" 
+            HorizontalAlignment="Left" 
+            Margin="70,170,0,0" 
+            VerticalAlignment="Top" 
+            RenderTransformOrigin="-7.451,0.524" Width="135"/>
+        <TextBox 
+            Name="InvulveldStraal"
+            HorizontalAlignment="Left" 
+            Margin="300,61,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="120"/>
+        <TextBox 
+            Name="InvulveldOmtrek"
+            HorizontalAlignment="Left" 
+            Margin="300,123,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="120"/>
+        <TextBox 
+            Name="InvulveldOppervlakte"
+            HorizontalAlignment="Left" 
+            Margin="300,178,0,0" 
+            Text="" 
+            TextWrapping="Wrap" 
+            VerticalAlignment="Top" 
+            Width="120"/>
+        <Button 
+            Name="Bereken"
+            Content="Bereken" 
+            HorizontalAlignment="Left" 
+            Margin="500,121,0,0" 
+            VerticalAlignment="Top" Click="Bereken_Click"/>
+        <Button 
+            Name ="Wissen"
+            Content="Wissen" 
+            HorizontalAlignment="Left" 
+            Margin="500,181,0,0" 
+            VerticalAlignment="Top"
+            Click="Wissen_Click"/>
+           
+
+
+    </Grid>
+</Window>

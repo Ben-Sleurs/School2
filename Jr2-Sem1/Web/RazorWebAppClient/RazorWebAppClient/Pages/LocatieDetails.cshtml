@@ -1,0 +1,17 @@
+﻿@page
+@model RazorWebAppClient.Pages.LocatieDetailsModel
+@{
+    var id = Model.LocationId;
+    var row = Data.Databank.Locaties.Where(x => x.LocationId == id).FirstOrDefault();
+    var postCode = (row != null) ? row.PostCode : "";
+    var city = (row != null) ? row.City : "";
+}
+<div>
+    <h1>Locatie details</h1>
+    <br/>
+    Id: @id
+    <br/>
+    Postcode: @postCode
+    <br/>
+    City: @city
+</div>

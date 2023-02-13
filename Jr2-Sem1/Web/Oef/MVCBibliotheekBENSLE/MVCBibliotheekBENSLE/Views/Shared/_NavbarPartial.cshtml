@@ -1,0 +1,17 @@
+﻿@using MVCBibliotheekBENSLE.Models.Data
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@if (SignInManager == null || !SignInManager.IsSignedIn(User))
+{
+    <a class="p-1 m-1 text-light bg-dark border border-white"
+    asp-controller="Account" asp-action="Login">Login</a>
+    <a class="p-1 m-1 text-light bg-dark border border-white"
+    asp-controller="Account" asp-action="Register">Nieuwe Gebruiker</a>
+}
+else
+{
+    <a class="p-1 m-1 text-light bg-dark border border-white"
+    asp-controller="Gebruiker" asp-action="details" asp-route-id="@User">Gebruiker details</a>
+    <a class="p-1 m-1 text-light bg-dark border border-white"
+    asp-controller="Account" asp-action="Logout">Logout</a>
+}

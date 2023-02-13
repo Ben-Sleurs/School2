@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Layout_Oef_3</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pizza bottom links.png" />
+    <None Remove="Pizza bottom rechts.png" />
+    <None Remove="Pizza top links.png" />
+    <None Remove="Pizza top rechts.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Pizza bottom links.png" />
+    <Resource Include="Pizza bottom rechts.png" />
+    <Resource Include="Pizza top links.png" />
+    <Resource Include="Pizza top rechts.png" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="OefWeek3.Oefening2"
+             Title="Oefening2">
+    <Grid Padding="5"
+          RowSpacing="1"
+          ColumnSpacing="1"
+          BackgroundColor="Black">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition Height="0.125*"/>
+            <RowDefinition Height="0.125*"/>
+            <RowDefinition Height="0.125*"/>
+            <RowDefinition Height="0.125*"/>
+            <RowDefinition Height="0.125*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="0.25*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="LblEquation" FontAttributes="Bold" FontSize="48" Text="0" TextColor="White" LineBreakMode="NoWrap" VerticalTextAlignment="Center" HorizontalTextAlignment="End" Grid.ColumnSpan="4"></Label>
+        <Button Clicked="CalculatorClick" Text="7" BackgroundColor="White" TextColor="Black" Grid.Row="1" Grid.Column="0"/>
+        <Button Clicked="CalculatorClick" Text="8" BackgroundColor="White" TextColor="Black" Grid.Row="1" Grid.Column="1"/>
+        <Button Clicked="CalculatorClick" Text="9" BackgroundColor="White" TextColor="Black" Grid.Row="1" Grid.Column="2"/>
+        <Button Clicked="CalculatorClick" Text="/" TextColor="White" BackgroundColor="Orange" Grid.Row="1" Grid.Column="3"/>
+        <Button Clicked="CalculatorClick" Text="4" BackgroundColor="White" TextColor="Black" Grid.Row="2" Grid.Column="0"/>
+        <Button Clicked="CalculatorClick" Text="5" BackgroundColor="White" TextColor="Black" Grid.Row="2" Grid.Column="1"/>
+        <Button Clicked="CalculatorClick" Text="6" BackgroundColor="White" TextColor="Black" Grid.Row="2" Grid.Column="2"/>
+        <Button Clicked="CalculatorClick" Text="X" TextColor="White" BackgroundColor="Orange" Grid.Row="2" Grid.Column="3"/>
+        <Button Clicked="CalculatorClick" Text="1" BackgroundColor="White" TextColor="Black" Grid.Row="3" Grid.Column="0"/>
+        <Button Clicked="CalculatorClick" Text="2" BackgroundColor="White" TextColor="Black" Grid.Row="3" Grid.Column="1"/>
+        <Button Clicked="CalculatorClick" Text="3" BackgroundColor="White" TextColor="Black" Grid.Row="3" Grid.Column="2"/>
+        <Button Clicked="CalculatorClick" Text="-" TextColor="White" BackgroundColor="Orange" Grid.Row="3" Grid.Column="3"/>
+        <Button Clicked="CalculatorClick" Text="0" BackgroundColor="White" TextColor="Black" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <Button Clicked="CalculatorClick" Text="+" TextColor="White" BackgroundColor="Orange" Grid.Row="4" Grid.Column="3"/>
+        <Button Clicked="CalculatorClick" Text="C" TextColor="White" BackgroundColor="Gray" Grid.Row="5" Grid.Column="0"/>
+        <Button Clicked="CalculatorClick" Text="=" TextColor="White" BackgroundColor="Orange" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="3"/>
+    </Grid>
+</ContentPage>

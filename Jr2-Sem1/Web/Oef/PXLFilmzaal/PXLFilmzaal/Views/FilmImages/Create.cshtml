@@ -1,0 +1,43 @@
+﻿@model PXLFilmzaal.Models.Data.FilmImage
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>FilmImage</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="FilmImageId" class="control-label"></label>
+                <input asp-for="FilmImageId" class="form-control" />
+                <span asp-validation-for="FilmImageId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FilmImageData" class="control-label"></label>
+                <input asp-for="FilmImageData" class="form-control" />
+                <span asp-validation-for="FilmImageData" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FilmImageName" class="control-label"></label>
+                <input asp-for="FilmImageName" class="form-control" />
+                <span asp-validation-for="FilmImageName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,17 @@
+﻿@model Location
+@{
+}
+<h1>Create</h1>
+<form asp-action="CreateLocation" method="post">
+    <div>
+        <label asp-for="Postcode"></label>
+        <input asp-for="Postcode"/>
+        <span asp-validation-for="Postcode" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="City"></label>
+        <input asp-for="City"/>
+        <span asp-validation-for="City" class="text-danger"></span>
+    </div>
+    <button type="submit">Create</button>
+</form>

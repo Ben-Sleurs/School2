@@ -1,0 +1,74 @@
+SQL?
+
+Het resultaat van een query is altijd een tabel
+Tabel = verzameling van rijen (en kolommen)
+Elke rijd van zo een tabel = element van die verzameling
+
+
+union
+-----
+A = {a, b, c , d, e}
+B= {b, d, g, h}
+
+A union B = A U B = alles wat in A zit en alles wat in B zit (zonder duplicaten)
+= {a, b, c, d, e } U {b, d, g, h}
+= {a, b, c , d ,e , g ,h}
+
+A union all B = {a, b, c , d, e} union all {b, d, g, h}
+= {ça, b, c, d, e, b , d, g, h}
+
+A union B = B union A
+
+geem mij alle locaties (zovel van cursusplaatsen als afdelingsplaatsen)
+
+select u.locatie
+from uitvoeringen u
+union
+select a.locatie
+from afdelingen a
+order by locatie desc;
+
+
+intersect
+----------
+A = {a, b, c, d, e}
+B = {b, d, g, h}
+
+A intersect B = A ∩ b (alt 239)
+= welke elementen van A en B zijn gemeenschappelijk?
+= {a, b, c, d, e} ∩ {b, d, g , h }
+= {b, d}
+
+A intersect B = B intersect A
+
+{b, d}={d, b}
+
+select u.locatie
+from uitvoeringen u
+intersect
+select a.locatie
+from afdelingen a;
+
+
+minus (verschil)
+----------------
+A={a,b,c,d,e}
+B={b,d,g,h}
+
+A minus B = A\B
+=neem alles wat in A zit maar verwijder daarvan alles wat in B zit
+={a,b,c,d,e} minus {b,d,g,h}
+={a,c,e}
+
+
+B minus A = B\A
+={b,d,g,h} minus {a,b,c,d,e}
+={g,h}
+
+A minus B is niet commutatief
+
+Richtlijnen van verzamingsoperator
+----------------------------------------
+1) alle queries moeten evenveel kolommen selecteren.
+2) datatypes van kolommen moeten matchen
+3) werkt alleen als order by helemaal beneden staat

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>WPF_Vulkaan</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Vulkaan.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Vulkaan.png" />
+  </ItemGroup>
+
+</Project>

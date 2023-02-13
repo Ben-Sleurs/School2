@@ -1,0 +1,15 @@
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\bin\Debug\net6.0\teztzertzetz.exe
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\bin\Debug\net6.0\teztzertzetz.deps.json
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\bin\Debug\net6.0\teztzertzetz.runtimeconfig.json
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\bin\Debug\net6.0\teztzertzetz.dll
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\bin\Debug\net6.0\teztzertzetz.pdb
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\obj\Debug\net6.0\teztzertzetz.csproj.AssemblyReference.cache
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\obj\Debug\net6.0\teztzertzetz.GeneratedMSBuildEditorConfig.editorconfig
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\obj\Debug\net6.0\teztzertzetz.AssemblyInfoInputs.cache
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\obj\Debug\net6.0\teztzertzetz.AssemblyInfo.cs
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\obj\Debug\net6.0\teztzertzetz.csproj.CoreCompileInputs.cache
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\obj\Debug\net6.0\teztzertzetz.dll
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\obj\Debug\net6.0\refint\teztzertzetz.dll
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\obj\Debug\net6.0\teztzertzetz.pdb
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\obj\Debug\net6.0\teztzertzetz.genruntimeconfig.cache
+C:\School\Jr2-Sem1\Web\Oef\teztzertzetz\teztzertzetz\obj\Debug\net6.0\ref\teztzertzetz.dll

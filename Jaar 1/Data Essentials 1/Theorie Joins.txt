@@ -1,0 +1,11 @@
+HAVING vs WHERE
+
+WHERE:
+	- elke rij filteren volgens een bepaalde voorwaarde
+	- in where kan geeen groepsfunctie staan (geen sum(), avg(),...)
+	- where komt voor de group by
+
+HAVING:
+	- pas filteren na een groepering (na een group by)
+	- hierin kan wel een groepsfunctie staan
+	- having komt na de group by

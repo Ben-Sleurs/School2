@@ -1,0 +1,8 @@
+﻿@model IEnumerable<string>
+@foreach (string nav in Model)
+{
+    string controller = nav + "s";
+    <a class="btn col-1 @(nav==ViewBag.SelectedCategory ? "btn-primary": "btn-outline-secondary")"
+   asp-action="Index" asp-controller="@controller">@nav</a>
+}
+

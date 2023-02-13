@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginFlowApp.Pages.CatPage"
+             Title="CatPage">
+    <VerticalStackLayout>
+        <Label 
+            Margin="50"
+            Text="Page"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            Rotation="{Binding Source={x:Reference rot_slider}, Path=Value}"/>
+        <Slider x:Name="rot_slider" Minimum="0" Maximum="360" Value="0"></Slider>
+    </VerticalStackLayout>
+</ContentPage>

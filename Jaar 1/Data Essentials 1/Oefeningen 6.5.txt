@@ -1,0 +1,52 @@
+OEFENINGEN 6.5
+------------------------------
+
+1:Wijzig de naam van medewerker met mnr 7876 in Boonen.
+
+update medewerkers
+SET naam='BOONEN'
+where mnr=7876;
+
+
+2:Verander de locatie van afdeling 10 in Tongeren.
+
+update afdelingen
+SET locatie = 'TONGEREN'
+where anr=10;
+
+
+3:Verwijder cursus LIN.
+
+delete from cursussen
+where code = 'LIN';
+
+
+4:Alle medewerkers van de afdeling Verkoop krijgen 10% opslag.
+
+update medewerkers
+set maandsal = maandsal*1.1
+where afd in (select anr from afdelingen where naam = 'VERKOOP');
+
+
+5:Voeg aan de tabel MEDEWERKERSDML de gegevens toe van een nieuwe medewerker:
+7999,Willem Revis, 21/01/1983, boekhouder, salaris € 2950, chef 7782. 
+
+insert into medewerkers (mnr, voorn, naam, gbdatum, functie, maandsal, chef)
+values (7999, 'WILLEM','REVIS', date '1983-01-22', 'BOEKHOUDER', 2950, 7782);     !!!!!!!!! opletten met date
+
+
+6:Voer de gegevens in van nog een medewerker: Polien Dox, 7989, trainer, chef 7902
+en geboren op de 350ste dag van 1980, om 3:30 's nachts.
+
+
+insert into medewerkers (voorn, naam, mnr, functie, chef, gbdatum,maandsal)
+values ('POLIEN', 'DOX', 7989, 'TRAINER', 7902, date'1980-01-01' +349,0);
+
+insert into medewerkers (voorn, naam, mnr, functie, chef, gbdatum, maandsal)
+values ('POLIEN', 'DOX', 7989, 'TRAINER', 7902,to_timestamp('01-01-1980 03:30:00','dd-mm-yyyy hh24:mi:ss')+349,0);
+
+
+
+2 datatypes in verband met tijd:
+date (tot op de dag nauwkeurig)
+timestamp (tot op nanosconde?)

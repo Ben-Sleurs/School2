@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MVCBibliotheekBENSLE</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/MVCBibliotheekBENSLE.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="d-flex bg-info text-white p-2">
+            <span class="navbar-brand flex-grow-1 bg-info ml-2">
+                <a class="p-1 m-1 text-light bg-dark border border-white"
+                asp-controller="Reservatie" asp-action="Index">Home</a>
+            </span>
+            <span class="navbar-brand flex-grow-1 bg-info ml-2">
+                <a class="p-1 m-1 text-light bg-dark border border-white"
+                   asp-controller="Reservaties" asp-action="Create">Nieuwe reservatie</a>
+            </span>
+            <span class="navbar-brand flex-grow-1 bg-info ml-2">
+                <a class="p-1 m-1 text-light bg-dark border border-white"
+                asp-controller="Vergaderzaals" asp-action="Index">Vergaderzalen</a>
+            </span>
+            <partial name="_NavbarPartial" />
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - MVCBibliotheekBENSLE
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

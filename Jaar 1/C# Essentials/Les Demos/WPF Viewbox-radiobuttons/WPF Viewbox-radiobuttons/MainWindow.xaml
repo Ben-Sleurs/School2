@@ -1,0 +1,52 @@
+﻿<Window x:Class="WPF_Viewbox_radiobuttons.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Viewbox_radiobuttons"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="20"
+                    >
+            <TextBlock FontSize="20">Komt ge naar feest</TextBlock>
+            <RadioButton Content="Ja" GroupName="Feest"
+                         Name="RB_Feest_Ja"/>
+            <RadioButton IsChecked="true" GroupName="Feest"
+                         Name="RB_Feest_Nee">Nee</RadioButton>
+            <TextBlock>Liever met zekerheid antwoorden</TextBlock>
+            <RadioButton Content="Misschien" GroupName="Feest"
+                         Name="RB_Feest_Misschien"></RadioButton>
+            <TextBlock FontSize="20" Margin="10">Lust jij pizza?</TextBlock>
+            <RadioButton GroupName="Pizza"
+                         Name="RB_Pizza_Ja">Ja</RadioButton>
+            <RadioButton IsChecked="true" GroupName="Pizza"
+                         Name="RB_Pizza_Nee">Nee</RadioButton>
+
+            <Button Margin=" 20" Name="B_Verzend" Click="B_Verzend_Click">Verzend antwoord</Button>
+        </StackPanel>
+        <Button Margin="20" Grid.Column="1">
+            <Viewbox>
+                <TextBlock Margin="20">Hallo</TextBlock>
+            </Viewbox>
+        </Button>
+
+        <Viewbox Grid.Row="1">
+            <StackPanel>
+                <Button Margin="20" Width="200">Knop 1</Button>
+                <Button Margin="20" Width="200">Knop 2</Button>
+                <Button Margin="20" Width="200">Knop 3</Button>
+
+            </StackPanel>
+        </Viewbox>
+
+    </Grid>
+</Window>

@@ -1,0 +1,52 @@
+is_global = true
+build_property.TargetFramework = net6.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = BindingDemo
+build_property.ProjectDir = C:\School\Jr2-Sem1\Mobile\Demos\BindingDemo\BindingDemo\
+
+[C:/School/Jr2-Sem1/Mobile/Demos/BindingDemo/BindingDemo/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BindingDemo.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/School/Jr2-Sem1/Mobile/Demos/BindingDemo/BindingDemo/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BindingDemo.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/School/Jr2-Sem1/Mobile/Demos/BindingDemo/BindingDemo/CatPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BindingDemo.CatPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CatPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CatPage.xaml
+
+[C:/School/Jr2-Sem1/Mobile/Demos/BindingDemo/BindingDemo/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BindingDemo.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/School/Jr2-Sem1/Mobile/Demos/BindingDemo/BindingDemo/Pages/ActorPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BindingDemo.Pages.ActorPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ActorPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ActorPage.xaml
+
+[C:/School/Jr2-Sem1/Mobile/Demos/BindingDemo/BindingDemo/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BindingDemo.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/School/Jr2-Sem1/Mobile/Demos/BindingDemo/BindingDemo/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = BindingDemo.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

@@ -1,0 +1,55 @@
+﻿<Window x:Class="WPF_Vulkaan.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Vulkaan"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Firebrick">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            <RowDefinition Height="0.6*"></RowDefinition>
+            <RowDefinition Height="0.2*"></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <Viewbox>
+            <TextBlock Name="TBL_Titel"
+                   HorizontalAlignment="center"
+                   VerticalAlignment="Center"
+                   Margin="3"
+                   Foreground="white"
+                   
+            >Vulkanen Gids
+            </TextBlock>
+        </Viewbox>
+        
+        
+        <Image Name="IMG_Vulkaan"
+               Margin="20"
+            Source="/Assets/Vulkaan.png"
+               Grid.Row="1"/>
+        <ComboBox Name="CB_Vulkanen"
+                  Margin="20"
+                  Grid.Row="2"
+                  HorizontalContentAlignment="Center"
+                  VerticalContentAlignment="Center"
+                  FontSize="18" SelectionChanged="CB_Vulkanen_SelectionChanged">
+
+        </ComboBox>
+        <TextBox Name="TB_Output"
+                 Margin="20"
+                 Grid.Row="1"
+                 Grid.RowSpan="2"
+                 Grid.Column="1"
+                 Background="DarkRed"
+                 Foreground="white"
+                 FontSize="18">
+            
+        </TextBox>
+    </Grid>
+</Window>

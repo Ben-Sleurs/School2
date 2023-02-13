@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Client>
+@{
+}
+<h1>Clients</h1>
+<a asp-controller="Clients" asp-action="Create">Create new</a>
+<table>
+    <tr>
+        <th>ClientId</th>
+        <th>LocationId</th>
+        <th>ClientName</th>
+        <th></th>
+    </tr>
+    @foreach(var klant in Model){
+        <tr>
+            <td>@klant.ClientId</td>
+            <td>@klant.LocationId</td>
+            <td>@klant.ClientName</td>
+            <td>edit|Details|Delete</td>
+        </tr>
+    }
+</table>

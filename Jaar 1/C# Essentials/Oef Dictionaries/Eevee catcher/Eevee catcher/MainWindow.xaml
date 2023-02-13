@@ -1,0 +1,38 @@
+﻿<Window x:Class="Eevee_catcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Eevee_catcher"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <Grid Background="Red"></Grid>
+        <Grid Background="black"
+              Grid.Row="1">
+            <Button Width="150" Margin=" 5"
+                    Name="B_Start" Click="B_Start_Click">START</Button>
+            <TextBlock Name="TBL_Time"
+                       HorizontalAlignment="Left"
+                       Margin="10"
+                       Foreground="White">
+                tijd
+            </TextBlock>
+        </Grid>
+        <TextBlock Grid.Row="2"
+                   VerticalAlignment="Bottom"
+                   Margin="10">
+            Snelste tijd: ??? - ???
+        </TextBlock>
+        <Image Grid.RowSpan="3"
+               Name="IMG_Random"
+               Margin="20"></Image>
+
+    </Grid>
+</Window>

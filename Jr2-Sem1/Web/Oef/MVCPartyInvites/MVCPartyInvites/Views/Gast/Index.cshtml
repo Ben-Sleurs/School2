@@ -1,0 +1,29 @@
+﻿@{
+}
+@model Gast
+<br/>
+<form asp-action="Reservatie" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div>
+        <label asp-for="Naam"></label>
+        <input asp-for="Naam"/>
+    </div>
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <div>
+        <label asp-for="Telefoon"></label>
+        <input asp-for="Telefoon"/>
+    </div>
+    <div>
+        <label asp-for="Aanwezig"></label>
+        <select asp-for="Aanwezig">
+            <option value="0">Kies één van de opties</option>
+            <option value="true">Ja, ik zal aanwezig zijn.</option>
+            <option value="false">Neen, ik kan niet komen.</option>
+        </select>
+    </div>
+    <button type="submit">Inschrijven</button>
+</form>

@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    height: 100%;
+}
+a:visited{
+    text-decoration: none;
+    color: inherit;
+}
+#Sony{
+    z-index: 9999;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    height: 36px;
+    background-color: black;
+    color: white;
+    justify-content: right;
+    align-items: center;
+    font-size: 20px;
+}
+
+#Sony a img{
+    height: 18px;
+
+}
+
+#Playstation{
+    z-index:9999;
+    margin-top: 36px;
+    width: 100%;
+    position: fixed;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+#Left{
+    margin-left:10px;
+    display: flex;
+    align-items: center;
+}
+#Left ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    height: 40px;
+
+}
+#Left a img{
+    height: 68px;
+}
+#Left p{
+    margin: 0 5px;
+}
+#Left p:hover{
+    color: blue;
+    cursor: pointer;
+}
+#Left a{
+    text-align: center;
+}
+.Dropdown-content {
+    display: none;
+    top: 48px;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.Dropdown:hover .Dropdown-content{
+    display: block;
+}
+#Right{
+    display: flex;
+    align-items:center;
+    margin-right: 10px;
+}
+#Right p{
+    padding: 5px;
+    background-color: grey;
+    border-radius: 13px;
+}
+#Right p:hover{
+    background-color: darkgray;
+    cursor: pointer;
+}
+#FixBanner{
+    padding-top: 108px;
+}
+#Shop{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#ShopTekst{
+    position: absolute;
+    top: 15px;
+    margin: 0 15%;
+}
+#ShopTekst *{
+    margin-bottom: 10px;
+}
+.ShopButton{
+    background-color: orange;
+    border-radius: 10px;
+    margin: 0 40%;
+    padding: 7px;
+    font-weight: bold;
+}
+.MainImage{
+    width: 100%;
+}
+.ImageBanner{
+    width: calc(100% - 15px);
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ImageBanner a img{
+    width: 70%;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+.ImageBanner a img:hover{
+    opacity: 1;
+    transform: translate(0px,-10px);
+    border: solid 2px blue;
+}
+#FarCry{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#FarcryTop{
+    height: calc(50% - 15px);
+    position: absolute;
+    top: 15px;
+}
+.notbold{
+    font-weight: normal;
+}
+
+#FarcryTop h2{
+    margin: 10px 0;
+}
+
+#FarcryTop p{
+    margin: 10px;
+}
+#FindOutMore{
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+#FarcryBottom{
+    position: absolute;
+    bottom: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#FarcryBottom img{
+    width: 70%;
+    height: 70%;
+    border-radius: 5px;
+    box-shadow: 2px 2px black;
+}
+#Introducing{
+
+}
+.center{
+    text-align: center;
+}
+.bluetext{
+    color: cornflowerblue;
+}
+.center .bluetext{
+    margin: 5px;
+}
+.center h2{
+    margin: 5px;
+}
+.center p{
+    margin: 15px;
+}
+#IntroducingBottom{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#IntroducingBottom div{
+    margin: 0 20px;
+    width: 40%;
+    display: inline-block;
+}
+#IntroducingBottom img{
+    width: 50%;
+}
+#Horizon{
+    position: relative;
+}
+#Horizon img{
+    width: 100%;
+}
+#Horizon div{
+    width: 50%;
+    color: white;
+    position: absolute;
+    bottom: 15px;
+}
+#Horizon p{
+    margin: 15px;
+}
+#Horizon h2{
+    margin: 15px;
+}
+#Horizon .ShopButton{
+    margin: 20px calc(100% - 150px) 20px 15px;
+}
+
+

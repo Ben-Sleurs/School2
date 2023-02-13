@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Pizza.css">
+</head>
+<body>
+<form action="mailto:ben.sleurs@student.pxl.be?subject=Pizza site test" method="post" enctype="text/plain" onsubmit="" >
+    <h1>Stel uw eigen pizza samen!</h1>
+
+    <h2>Voornaam en naam</h2>
+    <input type="text" name="Naam" id="Naam" required>
+
+    <h2>Type korst</h2>
+    <input type="radio" id="Klassiek" name="korst">
+    <label for="Klassiek">Klassiek</label>
+    <input type="radio" id="Italiaans" name="korst">
+    <label for="Italiaans">Italiaans</label>
+    <input type="radio" id="Amerikaans" name="korst">
+    <label for="Amerikaans">Amerikaans</label>
+
+    <h2>Toppings</h2>
+    <div id="Toppings">
+    <input type="Checkbox" id="Hesp" name="Hesp">
+    <label for="Hesp">Hesp</label>
+     <input type="Checkbox" id="Scampi" name="Scampi">
+    <label for="Scampi">Scampi</label>
+     <input type="Checkbox" id="Ajuin" name="Ajuin">
+    <label for="Ajuin">Ajuin</label>
+     <input type="Checkbox" id="Champignons" name="Champignons">
+    <label for="Champignons">Champignons</label>
+     <input type="Checkbox" id="Tonijn" name="Tonijn">
+    <label for="Tonijn">Tonijn</label>
+     <input type="Checkbox" id="Artisjok" name="Artisjok">
+    <label for="Artisjok">Artisjok</label>
+     <input type="Checkbox" id="Tomaat" name="Tomaat">
+    <label for="Tomaat">Tomaat</label>
+     <input type="Checkbox" id="Salami" name="Salami">
+    <label for="Salami">Salami</label>
+     <input type="Checkbox" id="Maïs" name="Maïs">
+    <label for="Maïs">Maïs</label>
+     <input type="Checkbox" id="Kaas" name="Kaas">
+    <label for="Kaas">Kaas</label>
+     <input type="Checkbox" id="Kip" name="Kip">
+    <label for="Kip">Kip</label>
+     <input type="Checkbox" id="Mozzarella" name="Mozzarella">
+    <label for="Mozzarella">Mozzarella</label>
+     <input type="Checkbox" id="Paprika" name="Paprika">
+    <label for="Paprika">Paprika</label>
+     <input type="Checkbox" id="Shoarma" name="Shoarma">
+    <label for="Shoarma">Shoarma</label>
+     <input type="Checkbox" id="Ananas" name="Ananas" disabled>
+    <label for="Ananas">Ananas</label>
+    </div>
+
+    <h2>Opmerkingen</h2>
+    <textarea name="Opmerkingen" id="Opmerkingen" cols="30" rows="10"></textarea>
+    
+    <h2>Betaalwijze</h2>
+    <select name="Betaalwijze" id="Betaalwijze" required>
+        <option value="Bankcontact">Bankcontact</option>
+        <option value="Cash">Cash</option>
+    </select>
+
+    <input id="button" type="Submit" value="Bestel!">
+
+</form>
+</body>
+</html>

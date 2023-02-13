@@ -1,0 +1,59 @@
+﻿<Window x:Class="WPF_Kaartgokker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Kaartgokker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            
+        </Grid.RowDefinitions>
+        <Label Name="L_Titel"
+               FontSize="24"
+               Grid.ColumnSpan="3"
+               HorizontalContentAlignment="Center"
+               VerticalContentAlignment="Center">
+            Raad de kleur van de kaart
+        </Label>
+        <StackPanel Name="Links"
+                    Grid.Row="1"
+                    Margin="20">
+            <Label Name="L_KiesKleur"
+                   FontSize="18">
+                Kies je Kleur
+            </Label>
+            <ComboBox Name="CB_Kleur"
+                      Height="20"
+                      Margin="20">
+                <ComboBoxItem Name="CBI_Harten">Harten</ComboBoxItem>
+                <ComboBoxItem Name="CBI_Schuppen">Schuppen</ComboBoxItem>
+                <ComboBoxItem Name="CBI_Klaveren">Klaveren</ComboBoxItem>
+                <ComboBoxItem Name="CBI_Ruiten">Ruiten</ComboBoxItem>
+                
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Name="Rechts"
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    Margin="20">
+            
+        </StackPanel>
+        <Button Name="B_Trek"
+                Grid.Row="1"
+                Grid.Column="1"
+                Margin="20"
+                Height="50">
+            Trek Kaart
+        </Button>
+    </Grid>
+</Window>

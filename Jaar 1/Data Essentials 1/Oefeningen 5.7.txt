@@ -1,0 +1,545 @@
+OEFENINGEN 5.7.1
+--------------------------------------------------------
+
+1:
+select m.naam , a.anr, a.naam
+from medewerkers m
+join afdelingen a
+on a.anr=m.afd;
+
+3:
+select naam
+from medewerkers 
+where afd in (select afd from medewerkers
+		where naam='WOUTERS');
+
+4:
+select m.mnr
+from medewerkers m
+join afdelingen a
+on m.afd=a.anr
+where a.anr = '30';
+
+5:
+select m.mnr, mm.naam
+from medewerkers m
+join medewerkers mm
+on m.chef=mm.mnr;
+
+6:
+BREAK ON afdeling;
+
+select
+	a.naam afdeling,
+	m.mnr || ' ' || m.voorn || ' ' || m.naam medewerker
+from afdelingen a
+join medewerkers m
+on a.anr=m.afd
+order by a.naam, m.mnr;
+
+7:
+select m.naam, m.maandsal, mm.maandsal
+from medewerkers m
+join medewerkers mm
+on m.chef=mm.mnr
+where m.maandsal>(mm.maandsal-1000);
+
+8:
+BREAK ON BAAS;
+
+select nvl(mm.naam,m.naam) as BAAS, m.naam as ONDERGESCHIKTEN
+from medewerkers m
+left join medewerkers mm
+on m.chef=mm.mnr;
+
+9:
+select a.naam, m.naam
+from afdelingen a
+join medewerkers m
+on a.hoofd=m.mnr;
+
+10:
+MET MEERDERE SUBQUERY
+--------------
+select distinct m.naam, m.voorn
+from medewerkers m
+join inschrijvingen i
+on m.mnr=i.cursist 
+where (i.cursus,i.begindatum) in 	(select cursus,begindatum
+					from uitvoeringen
+					where Locatie in 	(select locatie from afdelingen));
+
+MET MEERDERE JOINS
+------------------
+select distinct m.naam, m.voorn, u.locatie
+from medewerkers m
+join inschrijvingen i
+on m.mnr=i.cursist
+join uitvoeringen u
+on i.cursus=u.cursus and i.begindatum=u.begindatum
+join afdelingen a
+on u.locatie=a.locatie;
+
+11:
+select distinct m.naam, m.voorn, u.locatie
+from medewerkers m
+join inschrijvingen i
+on m.mnr=i.cursist
+join uitvoeringen u
+on i.cursus=u.cursus and i.begindatum=u.begindatum
+join afdelingen a
+on u.locatie=a.locatie
+where m.afd in a.anr;
+
+12:
+
+select m.naam,m.chef,m.mnr,mm.mnr,mm.naam
+from inschrijvingen i
+join medewerkers m
+on i.cursist=m.mnr
+join medewerkers mm
+on m.chef=mm.mnr
+join inschrijvingen ii
+on ii.cursist=mm.mnr
+where (i.cursus in ii.cursus) and (i.begindatum in ii.begindatum);
+
+
+
+
+13:
+select distinct m.naam
+from medewerkers m
+join uitvoeringen u
+on u.docent=m.mnr
+where u.cursus in ('SQL','ORG','WEB');
+
+14:
+BREAK ON DOCENT on omschrijving;
+
+select mm.naam as DOCENT,c.omschrijving as OMSCHRIJVING,m.naam as cursist
+from uitvoeringen u
+full outer join inschrijvingen i
+on i.cursus=u.cursus and u.begindatum=i.begindatum
+join cursussen c
+on u.cursus=c.code
+join medewerkers m
+on m.mnr=i.cursist
+join medewerkers mm
+on mm.mnr = u.docent
+order by docent,omschrijving;
+
+waarom full outer join inschrijvingen
+* docenten kunnen geen student hebben
+* studenten kunnen geen docenten hebben
+
+15:
+break on omschrijving;
+
+select c.omschrijving as omschrijving, u.begindatum,nvl(m.naam,'onbekend') as docent
+from cursussen c
+full outer join uitvoeringen u
+on c.code=u.cursus
+left join medewerkers m
+on u.docent=m.mnr
+order by omschrijving ;
+
+16:
+break on deelnemer;
+
+select m.naam as deelnemer,
+mm.naam as chef,
+a.naam as afdeling,
+c.omschrijving as omschrijving,
+mmm.naam as docent
+from inschrijvingen i
+join medewerkers m
+on i.cursist=m.mnr
+join medewerkers mm
+on m.chef=mm.mnr
+join afdelingen a
+on m.afd=a.anr
+join uitvoeringen u
+on u.cursus=i.cursus and u.begindatum=i.begindatum
+join cursussen c
+on c.code=u.cursus
+join medewerkers mmm
+on u.docent=mmm.mnr
+order by deelnemer,omschrijving;
+
+
+
+OEFENINGEN 5.7.2
+----------------------------------------
+
+1:Geef het aantal medewerkers per afdeling
+
+select afd,count(afd)
+from medewerkers
+group by afd;
+
+2:Geef het gemiddelde salaris per afdeling
+
+select afd, avg(maandsal)
+from medewerkers
+group by afd;
+
+3:Geef het aantal medewerkers per afdeling, maar enkel voor de afdelingen waar in de
+afdelingsnaam een “OO” voorkomt.
+
+select m.afd, a.naam, count(m.mnr)
+from medewerkers m
+join afdelingen a
+on m.afd = a.anr
+group by m.afd, a.naam
+having a.naam like '%OO%';
+
+4:Geef het aantal medewerkers voor alle afdelingen behalve de afdeling 10.
+
+select afd, count(afd)
+from medewerkers
+group by afd
+having afd!=10;
+
+5:Geef het maximum en het minimum salaris en de afdelingsnaam per afdeling.
+
+select afd, max(maandsal), min(maandsal)
+from medewerkers
+group by afd;
+
+6:Geef de naam en het salaris van de medewerker die het meest verdient
+
+select voorn,naam
+from medewerkers
+where maandsal in(
+	select max(maandsal)
+	from medewerkers);
+
+7:Geef per afdeling en per functie het aantal medewerkers en het gemiddelde salaris.
+
+select afd, functie, count(mnr), avg(maandsal)
+from medewerkers
+group by afd,functie;
+
+8:Geef per afdeling het gemiddelde salaris voor die afdelingen waar meer dan 3
+medewerkers werken.
+
+select afd, avg(maandsal), count(afd)
+from medewerkers
+group by afd
+having count(afd)>3;
+
+9:Geef per afdeling de naam van de afdeling en de naam van de medewerker(s) die het
+meest verdient.
+
+select a.naam, m.naam					MOEILIJKE OEFENINING!!!! ZEKER NAKIJKEN zie ook nr 11
+from afdelingen a
+join medewerkers m
+on m.afd=a.anr
+join (select m.afd, max(m.maandsal) max from medewerkers m group by m.afd) mm
+on m.afd=mm.afd
+where m.maandsal=mm.max;
+
+
+10:Geef de namen van de medewerkers die een hoger salaris hebben dan het gemiddelde
+salaris.
+
+select naam, maandsal
+from medewerkers m
+where maandsal >(
+	select avg(maandsal)
+	from medewerkers mm);
+
+11:Geef de namen van de medewerkers die een hoger salaris hebben dan het gemiddelde
+salaris van hun afdeling.
+
+select m.afd,m.naam,m.maandsal
+from medewerkers m
+join (select afd,avg(maandsal) gem from medewerkers group by afd) mm
+on mm.afd=m.afd
+where m.maandsal>mm.gem;
+
+12:Geef het aantal cursussen die elke medewerker gevolgd heeft (stijgend gesorteerd).
+
+select m.naam, count(i.cursist)
+from medewerkers m
+left join inschrijvingen i
+on i.cursist=m.mnr
+group by m.naam
+order by count(i.cursist) asc;
+
+13:Wat is het gemiddelde salaris van de medewerkers die in dezelfde afdeling werken als
+'Den Ruyter'?
+
+select avg(maandsal)
+from medewerkers
+where afd in (
+	select afd
+	from medewerkers
+	where naam like '%DEN RUYTER%');
+
+14:Hoeveel medewerkers verdienen minder dan het gemiddelde salaris plus 200?
+
+select count(mnr)
+from medewerkers
+where maandsal+200 > (
+	select avg(maandsal)
+	from medewerkers);
+
+15:Hoe heten de drie hoogst betaalde medewerkers?
+
+select m.naam
+from medewerkers m
+where 3>= (
+	select count(*)
+	from medewerkers mm
+	where mm.maandsal>= m.maandsal);	Wat doet dit hier precies??? wat is m.maandsal
+
+16:Wat zijn de namen en de salarissen van de vijf laagst betaalde medewerkers?
+
+select m.naam
+from medewerkers m
+where 5>= (
+	select count(*)
+	from medewerkers mm
+	where mm.maandsal<=m.maandsal);
+
+17:Idem vraag 16 maar sorteer het resultaat dalend op salaris.
+
+select m.naam,m.maandsal
+from medewerkers m
+where 5>= (
+	select count(*)
+	from medewerkers mm
+	where mm.maandsal<=m.maandsal)
+order by m.maandsal desc;
+
+18:Hoe heten de 3 meest verdienende verkopers?
+
+select m.naam
+from medewerkers m
+where m.functie='VERKOPER'		deze verkoper zorgt dat het alleen verkopers laat zien die meer verdienen dan de 3 meest verdienende verkopeers ipv iedereen die meer verdient dan de 3 meest verdienende verkopers
+and 3>= (
+	select count(*)
+	from medewerkers mm
+	where mm.maandsal>=m.maandsal
+	and mm.functie='VERKOPER');
+
+19:Welke is van alle gemiddelde maandsalarissen per afdeling het hoogste gemiddelde
+maandsalaris?
+
+select max(gem)
+from (select afd,avg(maandsal) gem from medewerkers group by afd);
+
+
+20:Welke afdeling (naam) heeft het hoogste gemiddelde maandsalaris?
+
+select a.naam, m.gem
+from (select afd,avg(maandsal) gem from medewerkers group by afd) m
+join afdelingen a
+on m.afd=a.anr
+where m.gem in 
+	(select max(gem)
+	from (select afd,avg(maandsal) gem from medewerkers group by afd));
+
+
+select a.naam, AVG(m.maandsal)
+from afdelingen a
+join medewerkers m
+on a.anr=m.afd
+group by a.naam
+having
+	avg(m.maandsal)=
+	(select max(avg(mm.maandsal))
+        from medewerkers mm
+	group by mm.afd);
+
+21:Op welke datum is voor het laatst een cursus gepland?
+
+select begindatum
+from uitvoeringen u
+where 1> (
+	select count(*)
+	from uitvoeringen uu
+	where uu.begindatum>u.begindatum);
+
+22:
+DEEL 1:
+break on afd;
+compute avg label GEMIDDELD of avg(maandsal) on afd;
+compute number label AANTAL of count(mnr) on afd;
+
+select afd, functie, count(mnr), avg(maandsal)
+from medewerkers
+group by afd,functie
+order by afd asc, functie asc;
+
+DEEL 2:
+
+
+
+
+
+OEFENINGEN 5.7.3
+-----------------------------------------------
+
+1:Geef een lijst van de medewerkesnamen en afdelingsnamen
+
+select m.naam
+from medewerkers m
+union select a.naam
+from afdelingen a;
+
+2:Geef een lijst met namen van afdelingen en namen van cursussen die respectievelijk in
+Hasselt gevestigd zijn of daar doorgaan.
+
+select a.naam
+from afdelingen a
+union
+select u.cursus 
+from uitvoeringen u
+where u.locatie='HASSELT';
+
+3:Geef de medewerkers die geen manager zijn.
+
+select * from medewerkers where functie !='MANAGER';
+
+
+4:Geef de locaties waar wel cursussen doorgaan maar waar geen afdelingen gevestigd zijn
+
+select u.locatie from uitvoeringen u
+minus
+select a.locatie from afdelingen a;
+
+5:Geef de naam en begindatum van elke cursus die alleen door de medewerker 7844 gevolgd is.
+
+select c.omschrijving, i.begindatum
+from cursussen c
+join uitvoeringen u
+on c.code = u.cursus
+join inschrijvingen i
+on u.cursus = i.cursus
+where i.cursist = 7844;
+
+6:Geef de cursuscode van de cursussen die E. Jacobs niet gevolg heeft.
+
+select i.cursus,i.cursist,m.mnr,m.naam
+from inschrijvingen i
+join medewerkers m
+on i.cursist=m.mnr
+where m.naam !='JACOBS' and m.voorn not like 'E%';
+
+
+
+
+7:Geef de namen van de medewerkers die geen cursussen gevolgd hebben
+
+select m.mnr,m.naam
+from medewerkers m
+minus
+select i.cursist, m.naam
+from inschrijvingen i
+join medewerkers m
+on m.mnr=i.cursist;
+
+8:In welke plaatsen is minstens één afdeling gevestigd en wordt minstens één cursus
+gepland.
+
+select u.locatie from uitvoeringen u
+intersect
+select a.locatie from afdelingen a;
+
+9:Geef de nummers van de medewerkers die de cursus 'Windows Server' gevolgd hebben
+en in de afdeling Verkoop werken.
+
+select m.mnr
+from medewerkers m
+join afdelingen a
+on a.anr=m.afd
+where a.naam ='VERKOOP'
+intersect
+select i.cursist
+from inschrijvingen i
+where i.cursus in 'WIN';
+
+--------------------------------
+OEFENINGEN 5.7.4
+-------------------------------
+
+1) Maak een view BAAS dat het nummer van elke medewerker geeft, gevolgd door de
+naam van zijn of haar baas
+
+create view BAAS as
+select m.mnr, mm.naam as chef
+from medewerkers m
+left join medewerkers mm
+on mm.mnr=m.chef;
+
+
+2)Wijzig de view zodat de gegevens stijgend gesorteerd op de naam van de baas worden
+weergegeven.
+
+create or replace view BAAS as
+select m.mnr, mm.naam as chef
+from medewerkers m
+left join medewerkers mm
+on mm.mnr=m.chef
+order by chef asc;
+
+
+3)Zoek de view op in de datadicitionary en geef de viewdefinitie.
+
+select view_name,text
+from user_views;
+
+4)Maak een view JAARSAL dat de voornamen, de namen, afdelingsnaam en het jaarsalaris
+(incl. commissie) van alle medewerkers berekent.
+
+create view JAARSAL as
+select m.voorn,m.naam,a.naam as afdeling, ((m.maandsal*12)+nvl(m.comm,0)) as jaarsal
+from medewerkers m
+join afdelingen a
+on m.afd=a.anr;
+
+
+5)Gebruik de view om enkel de medewerkers van de afdeling opleidingen te selecteren.
+Verwijder je laatste view.
+
+select * from jaarsal
+where afdeling ='OPLEIDINGEN';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

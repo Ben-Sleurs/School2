@@ -1,0 +1,33 @@
+html{
+    color: white;
+    font-family: Roboto,Serif;
+}
+table{
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    vertical-align: middle;
+    border:solid 20px #c7ced8;
+
+}
+th{
+    border:solid 1px black
+}
+td{
+    border:solid 1px black;
+    width:110px;
+    height:25px;
+
+}
+thead{
+    background-color: #27426d;
+}
+tbody tr:nth-child(odd){
+    background-color: #4f8cef;
+}
+tbody tr:nth-child(even){
+    background-color: #6facff;
+}
+tfoot{
+    background-color: #27426d;
+}

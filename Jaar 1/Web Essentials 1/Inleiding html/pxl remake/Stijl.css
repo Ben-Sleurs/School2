@@ -1,0 +1,45 @@
+
+* {
+    background-color:#D9DDD7 ;
+    font-family: Verdana, serif;
+}
+p {
+    background-color: #6A7689;
+    color:white;
+    padding: 20px;
+
+}
+p b i{
+    background-color: #6A7689;
+}
+
+p b{
+    background-color: #6A7689;
+}
+p i{
+    background-color: #6A7689;
+}
+p sup{
+    background-color: #6A7689;
+}
+p u{
+    background-color: #6A7689;
+}
+
+h1{
+    color:#2E6F0D;
+}
+
+.hightlight{
+    color:yellow;
+    border:solid 2px yellow;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+a{
+    color:white;
+}
+a:hover{
+    color:#6df469;
+}

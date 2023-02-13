@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="LoginFlowApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:LoginFlowApp"
+    xmlns:pages="clr-namespace:LoginFlowApp.Pages">
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate pages:LoginPage}"
+        Route="LoginPage" 
+        FlyoutItemIsVisible="False"/>
+    <ShellContent
+        Title="Cat"
+        ContentTemplate="{DataTemplate pages:CatPage}"
+        Route="CatPage" />
+    <ShellContent
+        Title="Actor"
+        ContentTemplate="{DataTemplate pages:ActorPage}"
+        Route="ActorPage" />
+    <ShellContent
+        Title="Informatie"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <MenuItem Text="Logout"
+              IconImageSource="👍👍👍"
+              Command="{Binding LogoutCommand}">
+        
+    </MenuItem>
+
+</Shell>
