@@ -1,0 +1,15 @@
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\bin\Debug\net6.0\EncodingDemo.exe
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\bin\Debug\net6.0\EncodingDemo.deps.json
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\bin\Debug\net6.0\EncodingDemo.runtimeconfig.json
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\bin\Debug\net6.0\EncodingDemo.dll
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\bin\Debug\net6.0\EncodingDemo.pdb
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\obj\Debug\net6.0\EncodingDemo.csproj.AssemblyReference.cache
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\obj\Debug\net6.0\EncodingDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\obj\Debug\net6.0\EncodingDemo.AssemblyInfoInputs.cache
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\obj\Debug\net6.0\EncodingDemo.AssemblyInfo.cs
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\obj\Debug\net6.0\EncodingDemo.csproj.CoreCompileInputs.cache
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\obj\Debug\net6.0\EncodingDemo.dll
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\obj\Debug\net6.0\refint\EncodingDemo.dll
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\obj\Debug\net6.0\EncodingDemo.pdb
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\obj\Debug\net6.0\EncodingDemo.genruntimeconfig.cache
+C:\School2\Jr2-Sem2\Security\EncodingDemo\EncodingDemo\obj\Debug\net6.0\ref\EncodingDemo.dll

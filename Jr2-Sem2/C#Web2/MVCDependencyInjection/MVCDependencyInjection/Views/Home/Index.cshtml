@@ -1,0 +1,20 @@
+﻿@{
+    int productCount = (int)ViewBag.ProductCount;
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Products</h1>
+    @if (productCount > 1)
+    {
+                                                                                                            <p>
+            @productCount unique products in our repository
+                                                                                                            </p>
+    }
+    else
+    {
+                                                                                                                <p>
+            @productCount unique product in our repository
+                                                                                                                                </p>
+    }
+</div>
