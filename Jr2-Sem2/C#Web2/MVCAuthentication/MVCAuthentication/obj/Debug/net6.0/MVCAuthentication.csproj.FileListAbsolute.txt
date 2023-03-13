@@ -138,3 +138,5 @@ C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\MVCAuthentication\obj\Debug\net6.0\
 C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\MVCAuthentication\obj\Debug\net6.0\MVCAuthentication.genruntimeconfig.cache
 C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\MVCAuthentication\obj\Debug\net6.0\ref\MVCAuthentication.dll
 C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\MVCAuthentication\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Facebook.dll
+C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\MVCAuthentication\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\MVCAuthentication\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
