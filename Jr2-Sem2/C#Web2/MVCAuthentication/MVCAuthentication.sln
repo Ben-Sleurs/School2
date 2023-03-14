@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCAuthentication", "MVCAuthentication\MVCAuthentication.csproj", "{1FE6EBEA-691D-4671-8B0A-79BE23DFC84A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Duende.IdentityServer.Demo", "DuendeIdentityServer\DuendeIdentityServer\Duende.IdentityServer.Demo.csproj", "{27D7D711-E739-46F4-8A01-6296A287A59A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1FE6EBEA-691D-4671-8B0A-79BE23DFC84A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FE6EBEA-691D-4671-8B0A-79BE23DFC84A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FE6EBEA-691D-4671-8B0A-79BE23DFC84A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27D7D711-E739-46F4-8A01-6296A287A59A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27D7D711-E739-46F4-8A01-6296A287A59A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27D7D711-E739-46F4-8A01-6296A287A59A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27D7D711-E739-46F4-8A01-6296A287A59A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

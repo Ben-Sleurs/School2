@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using MVCAuthentication.ViewModels;
 using System.Runtime.CompilerServices;
+using System.Security.Claims;
+using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 
 namespace MVCAuthentication.Controllers
 {
@@ -79,14 +81,156 @@ namespace MVCAuthentication.Controllers
             var properties = _signInManager.ConfigureExternalAuthenticationProperties("Facebook", redirectUrl);
             return new ChallengeResult("Facebook", properties);
         }
+        [HttpPost]
         public async Task<IActionResult> FacebookResponse()
+        {
+            //retrieve information that was send in the http request (by facebook)
+            ExternalLoginInfo externalLoginInfo =
+                await _signInManager.GetExternalLoginInfoAsync();
+            if (externalLoginInfo == null)
+            {
+                //user did not login properly with facebook -> redirect to login page
+                return RedirectToAction(nameof(Login));
+            }
+            //Put info provided by facebook (claims) into a viewmodel
+            string userName = externalLoginInfo.Principal.FindFirst(ClaimTypes.Name).Value;
+            //make sure username is unique
+            UserViewModel model = new UserViewModel()
+            {
+                UserName = userName,
+                Email = externalLoginInfo.Principal.FindFirst(ClaimTypes.Email).Value
+            };
+            //try to sign in with facebook user id (ProviderKey)
+            Microsoft.AspNetCore.Identity.SignInResult result =
+                await _signInManager.ExternalLoginSignInAsync(
+                externalLoginInfo.LoginProvider, externalLoginInfo.ProviderKey, false);
+            if (result.Succeeded)
+            {
+                return RedirectToAction("Index", "Test");
+            }
+            else
+            {
+                var identityResult = await CreateIdentityUserAsync(externalLoginInfo);
+                if (identityResult.Succeeded)
+                {
+                    return RedirectToAction("Index", "Test");
+                }
+            }
+            return View("login");
+        }
+
+        private async Task<IdentityResult> CreateIdentityUserAsync(ExternalLoginInfo externalLoginInfo)
+        {
+            //Put info provided by external provider (claims) into a viewmodel
+            //Sign in failed -> user does not exist yet in our database -> create one
+            IdentityUser user = GetIdentityUser(externalLoginInfo);
+            IdentityResult identityResult = await _userManager.CreateAsync(user);
+            if (identityResult.Succeeded)
+            {
+                //link the created user to the facebook login info
+                identityResult = await _userManager.AddLoginAsync(
+                user, externalLoginInfo);
+                if (identityResult.Succeeded)
+                {
+                    await _signInManager.SignInAsync(user, false);
+                }
+                else
+                {
+                    return IdentityResult.Failed(
+                    new IdentityError { Description = "error in AddLogin" });
+                }
+            }
+            return identityResult;
+        }
+        private IdentityUser GetIdentityUser(ExternalLoginInfo info)
+        {
+            string userName = info.Principal.FindFirst(ClaimTypes.Name).Value;
+            userName = $"{userName}_{info.LoginProvider}_{info.ProviderKey}";
+            string email = info.Principal.FindFirst(ClaimTypes.Email).Value;
+            IdentityUser user = new IdentityUser(userName)
+            {
+                Email = email
+            };
+            return user;
+        }
+
+        public IActionResult GoogleLogin()
+        {
+            string redirectUrl = Url.Action("GoogleResponse", "Account");
+            var properties = _signInManager.ConfigureExternalAuthenticationProperties("Google", redirectUrl);
+            return new ChallengeResult("Google", properties);
+        }
+
+        public async Task<IActionResult> GoogleResponse()
         {
             ExternalLoginInfo externalLoginInfo = await _signInManager.GetExternalLoginInfoAsync();
             if (externalLoginInfo == null)
             {
                 return RedirectToAction(nameof(Login));
             }
-            return View("login");
+
+            //Put info provided by google (claims) into a viewmodel
+            string userName = externalLoginInfo.Principal.FindFirst(ClaimTypes.Name).Value;
+            //make sure username is unique
+            UserViewModel model = new UserViewModel()
+            {
+                UserName = userName,
+                Email = externalLoginInfo.Principal.FindFirst(ClaimTypes.Email).Value
+            };
+            Microsoft.AspNetCore.Identity.SignInResult result =
+                await _signInManager.ExternalLoginSignInAsync(
+                    externalLoginInfo.LoginProvider, externalLoginInfo.ProviderKey, false);
+            if (!result.Succeeded)
+            {
+                var identityResult = await CreateIdentityUserAsync(externalLoginInfo);
+                if (!identityResult.Succeeded)
+                {
+                    return View("Login");
+                }
+            }
+
+            return View("Login");
+
+        }
+
+        public IActionResult DuendeLogin()
+        {
+            string redirectUrl = Url.Action("DuendeResponse", "Account");
+            string scheme = "oidc";
+            //OpenIdConnectDefaults.AuthenticationScheme;
+            var properties = _signInManager.ConfigureExternalAuthenticationProperties(scheme, redirectUrl);
+            return new ChallengeResult(scheme, properties);
+        }
+
+        public async Task<IActionResult> DuendeResponse()
+        {
+            ExternalLoginInfo externalLoginInfo = await _signInManager.GetExternalLoginInfoAsync();
+            if (externalLoginInfo == null)
+            {
+                return RedirectToAction(nameof(Login));
+            }
+
+            //Put info provided by google (claims) into a viewmodel
+            string userName = externalLoginInfo.Principal.FindFirst(ClaimTypes.Name).Value;
+            //make sure username is unique
+            UserViewModel model = new UserViewModel()
+            {
+                UserName = userName,
+                Email = externalLoginInfo.Principal.FindFirst(ClaimTypes.Email).Value
+            };
+            Microsoft.AspNetCore.Identity.SignInResult result =
+                await _signInManager.ExternalLoginSignInAsync(
+                    externalLoginInfo.LoginProvider, externalLoginInfo.ProviderKey, false);
+            if (!result.Succeeded)
+            {
+                var identityResult = await CreateIdentityUserAsync(externalLoginInfo);
+                if (!identityResult.Succeeded)
+                {
+                    return View("Login");
+                }
+            }
+
+            return View("Login"); 
         }
         public async Task<IActionResult> LogoutAsync()
         {
