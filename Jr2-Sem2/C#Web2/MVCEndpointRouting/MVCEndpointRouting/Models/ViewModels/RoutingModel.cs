@@ -16,5 +16,5 @@ public class RoutingModel
         new Dictionary<string, string>();
 
     public string Parameters => string.Join(',', RoutingParameters.Select((x =>
-        string.Format("{0}:{1}", x.Key, x.Value))));
+        $"{x.Key}:{x.Value}")));
 }
