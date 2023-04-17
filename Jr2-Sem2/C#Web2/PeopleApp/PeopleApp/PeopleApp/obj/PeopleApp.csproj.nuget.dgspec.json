@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\School2\\Jr2-Sem2\\C#Web2\\PeopleApp\\PeopleApp\\PeopleApp\\PeopleApp.csproj": {}
+    "C:\\PXL\\Olod\\CsharpWeb2\\22-23\\VisualStudio\\PeopleApp\\PeopleApp\\PeopleApp.csproj": {}
   },
   "projects": {
-    "C:\\School2\\Jr2-Sem2\\C#Web2\\PeopleApp\\PeopleApp\\PeopleApp\\PeopleApp.csproj": {
+    "C:\\PXL\\Olod\\CsharpWeb2\\22-23\\VisualStudio\\PeopleApp\\PeopleApp\\PeopleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\School2\\Jr2-Sem2\\C#Web2\\PeopleApp\\PeopleApp\\PeopleApp\\PeopleApp.csproj",
+        "projectUniqueName": "C:\\PXL\\Olod\\CsharpWeb2\\22-23\\VisualStudio\\PeopleApp\\PeopleApp\\PeopleApp.csproj",
         "projectName": "PeopleApp",
-        "projectPath": "C:\\School2\\Jr2-Sem2\\C#Web2\\PeopleApp\\PeopleApp\\PeopleApp\\PeopleApp.csproj",
-        "packagesPath": "C:\\Users\\Sleur\\.nuget\\packages\\",
-        "outputPath": "C:\\School2\\Jr2-Sem2\\C#Web2\\PeopleApp\\PeopleApp\\PeopleApp\\obj\\",
+        "projectPath": "C:\\PXL\\Olod\\CsharpWeb2\\22-23\\VisualStudio\\PeopleApp\\PeopleApp\\PeopleApp.csproj",
+        "packagesPath": "C:\\Users\\20007064\\.nuget\\packages\\",
+        "outputPath": "C:\\PXL\\Olod\\CsharpWeb2\\22-23\\VisualStudio\\PeopleApp\\PeopleApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Sleur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\20007064\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,9 +25,7 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "C:\\Users\\Sleur\\.nuget\\packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,7 +80,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
