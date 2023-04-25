@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Duende.IdentityServer.Demo.props" />
+</Project>

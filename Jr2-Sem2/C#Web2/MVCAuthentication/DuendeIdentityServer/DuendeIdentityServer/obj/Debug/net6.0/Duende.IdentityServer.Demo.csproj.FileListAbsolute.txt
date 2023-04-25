@@ -42,3 +42,9 @@ C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\DuendeIdentityServer\DuendeIdentity
 C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\DuendeIdentityServer\DuendeIdentityServer\obj\Debug\net6.0\Duende.IdentityServer.Demo.pdb
 C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\DuendeIdentityServer\DuendeIdentityServer\obj\Debug\net6.0\Duende.IdentityServer.Demo.genruntimeconfig.cache
 C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\DuendeIdentityServer\DuendeIdentityServer\obj\Debug\net6.0\ref\Duende.IdentityServer.Demo.dll
+C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\DuendeIdentityServer\DuendeIdentityServer\bin\Debug\net6.0\keys\is-signing-key-C8B435B0DE70EDA3C6E60A690B8931C0.json
+C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\DuendeIdentityServer\DuendeIdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.Duende.IdentityServer.Demo.Microsoft.AspNetCore.StaticWebAssets.props
+C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\DuendeIdentityServer\DuendeIdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.build.Duende.IdentityServer.Demo.props
+C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\DuendeIdentityServer\DuendeIdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Duende.IdentityServer.Demo.props
+C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\DuendeIdentityServer\DuendeIdentityServer\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Duende.IdentityServer.Demo.props
+C:\School2\Jr2-Sem2\C#Web2\MVCAuthentication\DuendeIdentityServer\DuendeIdentityServer\obj\Debug\net6.0\staticwebassets.pack.json
