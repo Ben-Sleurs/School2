@@ -1,0 +1,33 @@
+@page "/manage"
+@page "/manage/locations"
+<h3>LocationsOverview</h3>
+<div>
+    <NavLink class="btn btn-secondary" href="/manage/locations/create">Create new location</NavLink>
+</div>
+<table class="table table-sm table-bordered table-striped">
+    <thead>
+    <tr>
+        <th>
+            Location
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (Location l in Locations)
+    {
+        <tr>
+            <td>
+                @l.City, @l.State
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+@code{
+
+    [Inject]
+    private ILocationRepository LocationRepository { get; set; }
+
+    public IEnumerable<Location> Locations => LocationRepository.GetLocations();
+
+}

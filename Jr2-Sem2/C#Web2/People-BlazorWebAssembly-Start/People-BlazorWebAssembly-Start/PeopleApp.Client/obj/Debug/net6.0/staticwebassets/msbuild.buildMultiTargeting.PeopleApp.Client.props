@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PeopleApp.Client.props" />
+</Project>

@@ -1,0 +1,10 @@
+<h3>PeopleList</h3>
+
+@code {
+    [Inject]
+    public IPersonRepository PersonRepository { get; set; }
+    [Inject]
+    public ILocationRepository LocationRepository { get; set; }
+
+    public IEnumerable<Person> People => PersonRepository.GetAll();
+}

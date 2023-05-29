@@ -1,0 +1,10 @@
+C:\Users\20003843\Desktop\CS_Web_2\NET6\4_0-People-BlazorWebAssembly-Start\PeopleApp.Shared\bin\Debug\netstandard2.0\PeopleApp.Shared.deps.json
+C:\Users\20003843\Desktop\CS_Web_2\NET6\4_0-People-BlazorWebAssembly-Start\PeopleApp.Shared\bin\Debug\netstandard2.0\PeopleApp.Shared.dll
+C:\Users\20003843\Desktop\CS_Web_2\NET6\4_0-People-BlazorWebAssembly-Start\PeopleApp.Shared\bin\Debug\netstandard2.0\PeopleApp.Shared.pdb
+C:\Users\20003843\Desktop\CS_Web_2\NET6\4_0-People-BlazorWebAssembly-Start\PeopleApp.Shared\obj\Debug\netstandard2.0\PeopleApp.Shared.csproj.AssemblyReference.cache
+C:\Users\20003843\Desktop\CS_Web_2\NET6\4_0-People-BlazorWebAssembly-Start\PeopleApp.Shared\obj\Debug\netstandard2.0\PeopleApp.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\20003843\Desktop\CS_Web_2\NET6\4_0-People-BlazorWebAssembly-Start\PeopleApp.Shared\obj\Debug\netstandard2.0\PeopleApp.Shared.AssemblyInfoInputs.cache
+C:\Users\20003843\Desktop\CS_Web_2\NET6\4_0-People-BlazorWebAssembly-Start\PeopleApp.Shared\obj\Debug\netstandard2.0\PeopleApp.Shared.AssemblyInfo.cs
+C:\Users\20003843\Desktop\CS_Web_2\NET6\4_0-People-BlazorWebAssembly-Start\PeopleApp.Shared\obj\Debug\netstandard2.0\PeopleApp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\20003843\Desktop\CS_Web_2\NET6\4_0-People-BlazorWebAssembly-Start\PeopleApp.Shared\obj\Debug\netstandard2.0\PeopleApp.Shared.dll
+C:\Users\20003843\Desktop\CS_Web_2\NET6\4_0-People-BlazorWebAssembly-Start\PeopleApp.Shared\obj\Debug\netstandard2.0\PeopleApp.Shared.pdb
