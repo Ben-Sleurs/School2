@@ -5,84 +5,85 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PXLFilmzaal
 build_property.RootNamespace = PXLFilmzaal
-build_property.ProjectDir = C:\School\Jr2-Sem1\Web\Oef\PXLFilmzaal\PXLFilmzaal\
+build_property.ProjectDir = C:\School2\Jr2-Sem1\Web\Oef\PXLFilmzaal\PXLFilmzaal\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\School\Jr2-Sem1\Web\Oef\PXLFilmzaal\PXLFilmzaal
+build_property.MSBuildProjectDirectory = C:\School2\Jr2-Sem1\Web\Oef\PXLFilmzaal\PXLFilmzaal
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/FilmImages/Create.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/FilmImages/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbUltYWdlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/FilmImages/Delete.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/FilmImages/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbUltYWdlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/FilmImages/Details.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/FilmImages/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbUltYWdlc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/FilmImages/Edit.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/FilmImages/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbUltYWdlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/FilmImages/Index.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/FilmImages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbUltYWdlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Films/Create.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Films/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Films/Delete.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Films/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Films/Details.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Films/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Films/Edit.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Films/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Films/Index.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Films/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Home/Index.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Home/Privacy.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Shared/Error.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Shared/_NavbarPartial.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Shared/_NavbarPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/_ViewImports.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/_ViewStart.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/School/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Shared/_Layout.cshtml]
+[C:/School2/Jr2-Sem1/Web/Oef/PXLFilmzaal/PXLFilmzaal/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5ezg252u3d
