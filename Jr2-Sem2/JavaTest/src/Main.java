@@ -21,16 +21,17 @@ public class Main {
             twelve.parent = nine; twelve.left = eleven; twelve.right = fourteen;
             eleven.parent = twelve;
             fourteen.parent = twelve;
+            String a = "17";
+            Integer b = Integer.parseInt(a);
 
-        var searchTree = new BinarySearchTree();
-        Integer result = searchTree.findInOrderSuccessor(twentyfive);
+        Integer result = BinarySearchTree.findInOrderSuccessor(twentyfive);
         System.out.println(result);
 
         }
 
     static class BinarySearchTree {
         Node root;
-        Integer findInOrderSuccessor(Node inputNode){
+        static Integer findInOrderSuccessor(Node inputNode){
             Integer parent = lowestDifferenceParent(inputNode, inputNode.key);
             Integer child = lowestDifferenceDown(inputNode, inputNode.key);
 
@@ -43,7 +44,7 @@ public class Main {
             return a;
 
         }
-        Integer lowestDifferenceDown(Node inputNode, Integer startValue){
+        static Integer lowestDifferenceDown(Node inputNode, Integer startValue){
             if(inputNode == null){
                 return null;
             }
@@ -62,7 +63,7 @@ public class Main {
                     .collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue))
                     .entrySet().stream().min(Map.Entry.comparingByValue()).map(Map.Entry::getValue).orElse(null);
         }
-        Integer lowestDifferenceParent(Node inputNode, Integer startValue){
+        static Integer lowestDifferenceParent(Node inputNode, Integer startValue){
             if(inputNode.parent == null){
                 return inputNode.key - startValue;
             }

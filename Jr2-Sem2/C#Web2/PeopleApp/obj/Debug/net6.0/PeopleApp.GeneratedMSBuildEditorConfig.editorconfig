@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PeopleApp
+build_property.RootNamespace = PeopleApp
+build_property.ProjectDir = C:\School2\Jr2-Sem2\C#Web2\PeopleApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\School2\Jr2-Sem2\C#Web2\PeopleApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/ExternalPeopleApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RXh0ZXJuYWxQZW9wbGVBcHBcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/ExternalPeopleApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RXh0ZXJuYWxQZW9wbGVBcHBcVmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/ExternalPeopleApp/Views/People/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RXh0ZXJuYWxQZW9wbGVBcHBcVmlld3NcUGVvcGxlXFZpZXcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/ExternalPeopleApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RXh0ZXJuYWxQZW9wbGVBcHBcVmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/ExternalPeopleApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RXh0ZXJuYWxQZW9wbGVBcHBcVmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/ExternalPeopleApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RXh0ZXJuYWxQZW9wbGVBcHBcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/ExternalPeopleApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RXh0ZXJuYWxQZW9wbGVBcHBcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/PeopleApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGVvcGxlQXBwXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/PeopleApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGVvcGxlQXBwXFZpZXdzXEhvbWVcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/PeopleApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGVvcGxlQXBwXFZpZXdzXFNoYXJlZFxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/PeopleApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGVvcGxlQXBwXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/PeopleApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGVvcGxlQXBwXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/ExternalPeopleApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = RXh0ZXJuYWxQZW9wbGVBcHBcVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6g5d1vgo91
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/PeopleApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGVvcGxlQXBwXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-19cc9rbz2r
+
+[C:/School2/Jr2-Sem2/C\#Web2/PeopleApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-eb6tou7587

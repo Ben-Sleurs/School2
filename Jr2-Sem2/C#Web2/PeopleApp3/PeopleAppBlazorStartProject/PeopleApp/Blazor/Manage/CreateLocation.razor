@@ -1,0 +1,31 @@
+@page "/manage/locations/create"
+@using Microsoft.Extensions.DependencyInjection
+@inherits OwningComponentBase
+<h4 class="bg-primary text-white text-center p-2">
+    Create Location
+</h4>
+<EditForm Model="Location" OnValidSubmit="HandleValidSubmit">
+    <div class="form-group">
+        <label>City</label>
+        <InputText class="form-control" @bindbind-Value="Location.City"/>
+    </div>
+    <div class="form-group">
+        <label>State</label>
+        <InputText class="form-control" @bind-Value="Location.State"></InputText>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <NavLink class="btn btn-secondary" href="/manage/locations">Back</NavLink>
+    </div>
+</EditForm>
+@code {
+    public ILocationRepository LocationRepository => ScopedServices.GetService<ILocationRepository>();
+    [Inject]
+    public NavigationManager NavigationManager { get; set; }
+    public Location Location { get; set; }
+    protected override void OnInitialized(){
+        Location = new Location();
+    }public void HandleValidSubmit(){
+        LocationRepository.AddLocation(Location);
+        NavigationManager.NavigateTo("/manage/locations");
+    }}

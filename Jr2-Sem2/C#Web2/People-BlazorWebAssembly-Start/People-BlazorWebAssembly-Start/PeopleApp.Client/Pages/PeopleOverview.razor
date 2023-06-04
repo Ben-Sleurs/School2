@@ -1,0 +1,42 @@
+@using System.Net
+@using PeopleApp.Shared.Api.Models
+
+@page manage-webassembly/people
+<h4 class="bg-primary text-white text-center p-2">Manage People</h4>
+<table class="table table-sm table-bordered table-striped">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Dept</th>
+        <th>Location</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (PersonOutputModel p in People)
+    {
+        <tr>
+            <td>@p.Id</td>
+            <td>@p.Surname, @p.Firstname</td>
+            <td>@p.DepartmentName</td>
+            <td>@p.LocationName</td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@code {
+    [Inject]
+    private HttpClient Http { get; set; }
+    public IList<PersonOutputModel> People { get; set; }
+
+    public PeopleOverview()
+    {
+        People = new List<PersonOutputModel>();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        People = await Http.GetFromJsonAsync<PersonOutputModel[]>("api/people");
+    }
+}
