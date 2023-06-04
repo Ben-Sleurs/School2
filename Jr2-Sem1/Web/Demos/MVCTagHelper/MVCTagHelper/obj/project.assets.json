@@ -10023,24 +10023,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Sleur\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Sleur\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\School\\Jr2-Sem1\\Web\\Demos\\MVCTagHelper\\MVCTagHelper\\MVCTagHelper.csproj",
+      "projectUniqueName": "C:\\School2\\Jr2-Sem1\\Web\\Demos\\MVCTagHelper\\MVCTagHelper\\MVCTagHelper.csproj",
       "projectName": "MVCTagHelper",
-      "projectPath": "C:\\School\\Jr2-Sem1\\Web\\Demos\\MVCTagHelper\\MVCTagHelper\\MVCTagHelper.csproj",
+      "projectPath": "C:\\School2\\Jr2-Sem1\\Web\\Demos\\MVCTagHelper\\MVCTagHelper\\MVCTagHelper.csproj",
       "packagesPath": "C:\\Users\\Sleur\\.nuget\\packages\\",
-      "outputPath": "C:\\School\\Jr2-Sem1\\Web\\Demos\\MVCTagHelper\\MVCTagHelper\\obj\\",
+      "outputPath": "C:\\School2\\Jr2-Sem1\\Web\\Demos\\MVCTagHelper\\MVCTagHelper\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
         "C:\\Users\\Sleur\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10048,7 +10043,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10105,7 +10100,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
